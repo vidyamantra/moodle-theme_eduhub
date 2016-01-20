@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="24px"
+   height="24px"
+   viewBox="0 0 24 24"
+   enable-background="new 0 0 24 24"
+   xml:space="preserve"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="/home/ajay/Desktop/pix_plugins (2)/pix_plugins/mod/assign/icon.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"><metadata
+   id="metadata15"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs13"><inkscape:perspective
+     sodipodi:type="inkscape:persp3d"
+     inkscape:vp_x="0 : 12 : 1"
+     inkscape:vp_y="0 : 1000 : 0"
+     inkscape:vp_z="24 : 12 : 1"
+     inkscape:persp3d-origin="12 : 8 : 1"
+     id="perspective17" /></defs><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="2048"
+   inkscape:window-height="1076"
+   id="namedview11"
+   showgrid="true"
+   inkscape:snap-global="false"
+   inkscape:zoom="24.660349"
+   inkscape:cx="4.5994559"
+   inkscape:cy="11.942652"
+   inkscape:window-x="0"
+   inkscape:window-y="25"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1"><inkscape:grid
+     type="xygrid"
+     id="grid2823" /></sodipodi:namedview>
+
+
+
+
+<path
+   style="fill:none;stroke:#333333;stroke-width:0.82099997999999985;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+   d="m 3.4004457,2.3970423 c 2.0596998,-0.020251 4.0125738,-0.00341 6.0041207,0 -0.074467,4.8235019 5.9524286,3.6023904 5.0791066,0 l 6.072079,0 0,21.1747017 -17.1553063,0 0,-21.1747017 z"
+   id="rect3597"
+   sodipodi:nodetypes="ccccccc" /><path
+   sodipodi:type="arc"
+   style="fill:none;stroke:#333333;stroke-width:0.82518476;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+   id="path3599"
+   sodipodi:cx="11.589648"
+   sodipodi:cy="3.0691841"
+   sodipodi:rx="2.6339288"
+   sodipodi:ry="2.5737364"
+   d="m 14.223577,3.0691841 a 2.6339288,2.5737364 0 1 1 -5.2678575,0 2.6339288,2.5737364 0 1 1 5.2678575,0 z"
+   transform="matrix(0.98645637,0,0,1.0034738,0.55027157,-0.0927549)" /><rect
+   y="8.9922705"
+   x="6.9769993"
+   height="0.72339338"
+   width="10.042616"
+   id="rect3604"
+   style="fill:#333333;stroke:#333333;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" /><rect
+   y="11.046423"
+   x="7.0049958"
+   height="0.72339338"
+   width="10.042616"
+   id="rect3606"
+   style="fill:#333333;stroke:#333333;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" /><rect
+   style="fill:#333333;stroke:#333333;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+   id="rect3608"
+   width="10.042616"
+   height="0.72339338"
+   x="6.9769993"
+   y="12.99227" /><rect
+   style="fill:#333333;stroke:#333333;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+   id="rect3610"
+   width="10.042616"
+   height="0.72339338"
+   x="7.0049958"
+   y="15.046423" /><rect
+   y="16.992271"
+   x="6.9769993"
+   height="0.72339338"
+   width="10.042616"
+   id="rect3612"
+   style="fill:#333333;stroke:#333333;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" /></svg>
