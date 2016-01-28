@@ -13,9 +13,8 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 require_once($CFG->dirroot . '/theme/bootstrapbase/renderers.php');
-
+require_once('course_renderer.php');
 /**
  * eduhub core renderers.
  *
@@ -24,7 +23,6 @@ require_once($CFG->dirroot . '/theme/bootstrapbase/renderers.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class theme_eduhub_core_renderer extends theme_bootstrapbase_core_renderer {
-
     /**
      * Either returns the parent version of the header bar, or a version with the logo replacing the header.
      *
@@ -38,13 +36,11 @@ class theme_eduhub_core_renderer extends theme_bootstrapbase_core_renderer {
      * @return string HTML for the header bar.
      */
     public function context_header($headerinfo = null, $headinglevel = 1) {
-
         if ($this->should_render_logo($headinglevel)) {
             return html_writer::tag('div', '', array('class' => 'logo'));
         }
         return parent::context_header($headerinfo, $headinglevel);
     }
-
     /**
      * Determines if we should render the logo.
      *
@@ -53,7 +49,6 @@ class theme_eduhub_core_renderer extends theme_bootstrapbase_core_renderer {
      */
     protected function should_render_logo($headinglevel = 1) {
         global $PAGE;
-
         // Only render the logo if we're on the front page or login page
         // and the theme has a logo.
         if ($headinglevel == 1 && !empty($this->page->theme->settings->logo)) {
@@ -61,7 +56,6 @@ class theme_eduhub_core_renderer extends theme_bootstrapbase_core_renderer {
                 return true;
             }
         }
-
         return false;
     }
 }

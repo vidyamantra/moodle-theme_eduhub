@@ -20,13 +20,9 @@
  * @package    theme_eduhub
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 defined('MOODLE_INTERNAL') || die();
-
 require_once($CFG->dirroot . "/course/renderer.php");
-
 class theme_eduhub_core_course_renderer extends core_course_renderer {
-
     protected function coursecat_coursebox_content(coursecat_helper $chelper, $course) {
         global $CFG;
         if ($chelper->get_show_courses() < self::COURSECAT_SHOW_COURSES_EXPANDED) {
@@ -37,7 +33,6 @@ class theme_eduhub_core_course_renderer extends core_course_renderer {
             $course = new course_in_list($course);
         }
         $content = '';
-
         // Display course overview files.
         $contentimages = $contentfiles = '';
         foreach ($course->get_course_overviewfiles() as $file) {
@@ -63,16 +58,10 @@ class theme_eduhub_core_course_renderer extends core_course_renderer {
             }
         }
         $content .= $contentimages. $contentfiles;
-
-
-
-
         // Display course summary.
         if ($course->has_summary()) {
             $content .= $chelper->get_course_formatted_summary($course);
         }
-
-
         // Display course contacts. See course_in_list::get_course_contacts().
         if ($course->has_course_contacts()) {
             $content .= html_writer::start_tag('ul', array('class' => 'teachers'));
@@ -83,13 +72,8 @@ class theme_eduhub_core_course_renderer extends core_course_renderer {
                             $coursecontact['username']);
                 $content .= html_writer::tag('li', $name);
             }
-            $content .= html_writer::end_tag('ul'); // .teachers
+            $content .= html_writer::end_tag('ul'); // ...Teachers!.
         }
- 
- 
-
         return $content;
     }
-    
-
-   }
+}
