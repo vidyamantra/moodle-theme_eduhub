@@ -38,44 +38,29 @@
  * @return string The parsed CSS The parsed CSS.
  */
 function theme_eduhub_process_css($css, $theme) {
-global $OUTPUT;
+    global $OUTPUT;
     // Set the background image for the logo.
     $logo = $theme->setting_file_url('logo', 'logo');
     $css = theme_eduhub_set_logo($css, $logo);
-    
     // Set the background image for the headerimg.
     $headerimg = $theme->setting_file_url('headerimg', 'headerimg');
-    
-    if(!isset($headerimg)){
-	     $headerimg = $OUTPUT->pix_url('headerimg', 'theme');
-	    }
-	     	$css = theme_eduhub_set_headerimg($css, $headerimg);
-    //$css = theme_eduhub_set_headerimg($css, $headerimg);
-
-    
+    if (!isset($headerimg)) {
+        $headerimg = $OUTPUT->pix_url('headerimg', 'theme');
+    }
+    $css = theme_eduhub_set_headerimg($css, $headerimg);
     // Set the background image for the footerimg.
     $footerimg = $theme->setting_file_url('footerimg', 'footerimg');
-    
-    if(!isset($footerimg)){
-	     $footerimg = $OUTPUT->pix_url('footerimg', 'theme');
-	    }
-	     	$css = theme_eduhub_set_footerimg($css, $footerimg);
-    //$css = theme_eduhub_set_footerimg($css, $footerimg);
-    
-        // Set the Site color
-        
+    if (!isset($footerimg)) {
+        $footerimg = $OUTPUT->pix_url('footerimg', 'theme');
+    }
+    $css = theme_eduhub_set_footerimg($css, $footerimg);
+    // Set the Site color.
     if (empty($theme->settings->sitecolor)) {
-        $sitecolor = '#3e65a0'; // default 
-
+        $sitecolor = '#3e65a0'; // Default.
     } else {
         $sitecolor = $theme->settings->sitecolor;
-
-		
-
     }
-    
     $css = eduhub_set_sitecolor($css, $sitecolor);
-
     // Set custom CSS.
     if (!empty($theme->settings->customcss)) {
         $customcss = $theme->settings->customcss;
@@ -83,12 +68,8 @@ global $OUTPUT;
         $customcss = null;
     }
     $css = theme_eduhub_set_customcss($css, $customcss);
-    
-    
-
     return $css;
 }
-
 /**
  * Adds the logo to CSS.
  *
@@ -102,16 +83,13 @@ function theme_eduhub_set_logo($css, $logo) {
     if (is_null($replacement)) {
         $replacement = '';
     }
-
     $css = str_replace($tag, $replacement, $css);
 
     return $css;
 }
 function eduhub_set_sitecolor($css, $sitecolor) {
-	
     $tag = '[[setting:sitecolor]]';
     $css = str_replace($tag, $sitecolor, $css);
-    
     return $css;
 }
 function theme_eduhub_set_headerimg($css, $headerimg) {
@@ -120,12 +98,10 @@ function theme_eduhub_set_headerimg($css, $headerimg) {
     if (is_null($replacement)) {
         $replacement = '';
     }
-
     $css = str_replace($tag, $replacement, $css);
 
     return $css;
 }
-
 function theme_eduhub_set_footerimg($css, $footerimg) {
     $tag = '[[setting:footerimg]]';
     $replacement = $footerimg;
@@ -187,7 +163,6 @@ function theme_eduhub_pluginfile($course, $cm, $context, $filearea, $args, $forc
         send_file_not_found();
     }
 }
-
 /**
  * Adds any custom CSS to the CSS before it is cached.
  *
@@ -206,7 +181,6 @@ function theme_eduhub_set_customcss($css, $customcss) {
 
     return $css;
 }
-
 /**
  * Returns an object containing HTML for the areas affected by settings.
  *
@@ -228,7 +202,6 @@ function theme_eduhub_get_html_for_settings(renderer_base $output, moodle_page $
     if (!empty($page->theme->settings->invert)) {
         $return->navbarclass .= ' navbar-inverse';
     }
-
     // Only display the logo on the front page and login page, if one is defined.
     if (!empty($page->theme->settings->logo) &&
             ($page->pagelayout == 'frontpage' || $page->pagelayout == 'login')) {
@@ -236,35 +209,10 @@ function theme_eduhub_get_html_for_settings(renderer_base $output, moodle_page $
     } else {
         $return->heading = $output->page_heading();
     }
-
     $return->footnote = '';
     if (!empty($page->theme->settings->footnote)) {
         $return->footnote = '<div class="footnote text-center">'.format_text($page->theme->settings->footnote).'</div>';
     }
 
     return $return;
-}
-
-/**
- * All theme functions should start with theme_eduhub_
- * @deprecated since 2.5.1
- */
-function eduhub_process_css() {
-    throw new coding_exception('Please call theme_'.__FUNCTION__.' instead of '.__FUNCTION__);
-}
-
-/**
- * All theme functions should start with theme_eduhub_
- * @deprecated since 2.5.1
- */
-function eduhub_set_logo() {
-    throw new coding_exception('Please call theme_'.__FUNCTION__.' instead of '.__FUNCTION__);
-}
-
-/**
- * All theme functions should start with theme_eduhub_
- * @deprecated since 2.5.1
- */
-function eduhub_set_customcss() {
-    throw new coding_exception('Please call theme_'.__FUNCTION__.' instead of '.__FUNCTION__);
 }
