@@ -45,327 +45,257 @@ if (right_to_left()) {
 }
 if (!empty($PAGE->theme->settings->copyright)) {
     $hascopyright = $PAGE->theme->settings->copyright;
-} 
-else {
+} else {
     $hascopyright = '';
 }
 if (!empty($PAGE->theme->settings->logo)) {
-    	$logourl = $PAGE->theme->setting_file_url('logo', 'logo');
-}else{
-  $logourl =$OUTPUT->pix_url('/logo', 'theme');
+    $logourl = $PAGE->theme->setting_file_url('logo', 'logo');
+} else {
+    $logourl = $OUTPUT->pix_url('/logo', 'theme');
 }
 if (!empty($PAGE->theme->settings->bannerheading)) {
     $bannerheading = $PAGE->theme->settings->bannerheading;
-} 
-
-else {
+} else {
     $bannerheading = '';
 }
 if (!empty($PAGE->theme->settings->bannercontent)) {
     $bannercontent = $PAGE->theme->settings->bannercontent;
-} 
-else {
+} else {
     $bannercontent = '';
 }
 if (!empty($PAGE->theme->settings->marketing1icon)) {
-   $marketing1icon = $PAGE->theme->setting_file_url('marketing1icon', 'marketing1icon');
+    $marketing1icon = $PAGE->theme->setting_file_url('marketing1icon', 'marketing1icon');
 } else {
     $marketing1icon = $OUTPUT->pix_url('icon1', 'theme');
 }
 
 if (!empty($PAGE->theme->settings->marketing1heading)) {
     $marketing1heading = $PAGE->theme->settings->marketing1heading;
-} 
-
-else {
+} else {
     $marketing1heading = '';
 }
 if (!empty($PAGE->theme->settings->marketing1subheading)) {
     $marketing1subheading = $PAGE->theme->settings->marketing1subheading;
-} 
-
-else {
+} else {
     $marketing1subheading = '';
 }
 if (!empty($PAGE->theme->settings->marketing1content)) {
     $marketing1content = $PAGE->theme->settings->marketing1content;
-} 
-
-else {
+} else {
     $marketing1content = '';
 }
 if (!empty($PAGE->theme->settings->marketing1url)) {
     $marketing1url = $PAGE->theme->settings->marketing1url;
-} 
-
-else {
+} else {
     $marketing1url = '';
 }
 if (!empty($PAGE->theme->settings->marketing2icon)) {
-   $marketing2icon = $PAGE->theme->setting_file_url('marketing2icon', 'marketing2icon');
+    $marketing2icon = $PAGE->theme->setting_file_url('marketing2icon', 'marketing2icon');
 } else {
     $marketing2icon = $OUTPUT->pix_url('icon2', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing2heading)) {
     $marketing2heading = $PAGE->theme->settings->marketing2heading;
-} 
-
-else {
+} else {
     $marketing2heading = '';
 }
 if (!empty($PAGE->theme->settings->marketing2subheading)) {
     $marketing2subheading = $PAGE->theme->settings->marketing2subheading;
-} 
-
-else {
+} else {
     $marketing2subheading = '';
 }
 if (!empty($PAGE->theme->settings->marketing2content)) {
     $marketing2content = $PAGE->theme->settings->marketing2content;
-} 
-
-else {
+} else {
     $marketing2content = '';
 }
 if (!empty($PAGE->theme->settings->marketing2url)) {
     $marketing2url = $PAGE->theme->settings->marketing2url;
-} 
-
-else {
+} else {
     $marketing2url = '';
 }
 if (!empty($PAGE->theme->settings->marketing3icon)) {
-   $marketing3icon = $PAGE->theme->setting_file_url('marketing3icon', 'marketing3icon');
+    $marketing3icon = $PAGE->theme->setting_file_url('marketing3icon', 'marketing3icon');
 } else {
     $marketing3icon = $OUTPUT->pix_url('icon3', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing3heading)) {
     $marketing3heading = $PAGE->theme->settings->marketing3heading;
-} 
-
-else {
+} else {
     $marketing3heading = '';
 }
 if (!empty($PAGE->theme->settings->marketing3subheading)) {
     $marketing3subheading = $PAGE->theme->settings->marketing3subheading;
-} 
-
-else {
+} else {
     $marketing3subheading = '';
 }
 if (!empty($PAGE->theme->settings->marketing3content)) {
     $marketing3content = $PAGE->theme->settings->marketing3content;
-} 
-
-else {
+} else {
     $marketing3content = '';
 }
 if (!empty($PAGE->theme->settings->marketing3url)) {
     $marketing3url = $PAGE->theme->settings->marketing3url;
-} 
-
-else {
+} else {
     $marketing3url = '';
 }
 if (!empty($PAGE->theme->settings->marketing4icon)) {
-   $marketing4icon = $PAGE->theme->setting_file_url('marketing4icon', 'marketing4icon');
+    $marketing4icon = $PAGE->theme->setting_file_url('marketing4icon', 'marketing4icon');
 } else {
     $marketing4icon = $OUTPUT->pix_url('icon4', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing4heading)) {
     $marketing4heading = $PAGE->theme->settings->marketing4heading;
-} 
-
-else {
+} else {
     $marketing4heading = '';
 }
 if (!empty($PAGE->theme->settings->marketing4subheading)) {
     $marketing4subheading = $PAGE->theme->settings->marketing4subheading;
-} 
-
-else {
+} else {
     $marketing4subheading = '';
 }
 if (!empty($PAGE->theme->settings->marketing4content)) {
     $marketing4content = $PAGE->theme->settings->marketing4content;
-} 
-
-else {
+} else {
     $marketing4content = '';
 }
 if (!empty($PAGE->theme->settings->marketing4url)) {
     $marketing4url = $PAGE->theme->settings->marketing4url;
-} 
-
-else {
+} else {
     $marketing4url = '';
 }
 /*---------Main-Box------------*/
 if (!empty($PAGE->theme->settings->mainbox1icon)) {
-   $mainbox1icon = $PAGE->theme->setting_file_url('mainbox1icon', 'mainbox1icon');
+    $mainbox1icon = $PAGE->theme->setting_file_url('mainbox1icon', 'mainbox1icon');
 } else {
     $mainbox1icon = $OUTPUT->pix_url('icon5', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox1heading)) {
     $mainbox1heading = $PAGE->theme->settings->mainbox1heading;
-} 
-else {
+} else {
     $mainbox1heading = '';
 }
 
 if (!empty($PAGE->theme->settings->mainbox1content)) {
     $mainbox1content = $PAGE->theme->settings->mainbox1content;
-} 
-else {
+} else {
     $mainbox1content = '';
 }
 if (!empty($PAGE->theme->settings->mainbox1url)) {
     $mainbox1url = $PAGE->theme->settings->mainbox1url;
-} 
-
-else {
+} else {
     $mainbox1url = '';
 }
 if (!empty($PAGE->theme->settings->mainbox2icon)) {
-   $mainbox2icon = $PAGE->theme->setting_file_url('mainbox2icon', 'mainbox2icon');
+    $mainbox2icon = $PAGE->theme->setting_file_url('mainbox2icon', 'mainbox2icon');
 } else {
     $mainbox2icon = $OUTPUT->pix_url('icon6', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox2heading)) {
     $mainbox2heading = $PAGE->theme->settings->mainbox2heading;
-} 
-
-else {
+} else {
     $mainbox2heading = '';
 }
 if (!empty($PAGE->theme->settings->mainbox2content)) {
     $mainbox2content = $PAGE->theme->settings->mainbox2content;
-} 
-
-else {
+} else {
     $mainbox2content = '';
 }
 if (!empty($PAGE->theme->settings->mainbox2url)) {
     $mainbox2url = $PAGE->theme->settings->mainbox2url;
-} 
-
-else {
+} else {
     $mainbox2url = '';
 }
 if (!empty($PAGE->theme->settings->mainbox3icon)) {
-   $mainbox3icon = $PAGE->theme->setting_file_url('mainbox3icon', 'mainbox3icon');
+    $mainbox3icon = $PAGE->theme->setting_file_url('mainbox3icon', 'mainbox3icon');
 } else {
     $mainbox3icon = $OUTPUT->pix_url('icon7', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox3heading)) {
     $mainbox3heading = $PAGE->theme->settings->mainbox3heading;
-} 
-
-else {
+} else {
     $mainbox3heading = '';
 }
 if (!empty($PAGE->theme->settings->mainbox3content)) {
     $mainbox3content = $PAGE->theme->settings->mainbox3content;
-} 
-
-else {
+} else {
     $mainbox3content = '';
 }
 if (!empty($PAGE->theme->settings->mainbox3url)) {
     $mainbox3url = $PAGE->theme->settings->mainbox3url;
-} 
-
-else {
+} else {
     $mainbox3url = '';
 }
 if (!empty($PAGE->theme->settings->mainbox4icon)) {
-   $mainbox4icon = $PAGE->theme->setting_file_url('mainbox4icon', 'mainbox4icon');
+    $mainbox4icon = $PAGE->theme->setting_file_url('mainbox4icon', 'mainbox4icon');
 } else {
     $mainbox4icon = $OUTPUT->pix_url('icon8', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox4heading)) {
     $mainbox4heading = $PAGE->theme->settings->mainbox4heading;
-} 
-
-else {
+} else {
     $mainbox4heading = '';
 }
 if (!empty($PAGE->theme->settings->mainbox4content)) {
     $mainbox4content = $PAGE->theme->settings->mainbox4content;
-} 
-
-else {
+} else {
     $mainbox4content = '';
 }
 if (!empty($PAGE->theme->settings->mainbox4url)) {
     $mainbox4url = $PAGE->theme->settings->mainbox4url;
-} 
-
-else {
+} else {
     $mainbox4url = '';
 }
 if (!empty($PAGE->theme->settings->mainheading)) {
     $mainheading = $PAGE->theme->settings->mainheading;
-} 
-
-else {
+} else {
     $mainheading = '';
 }
 if (!empty($PAGE->theme->settings->maincontent)) {
     $maincontent = $PAGE->theme->settings->maincontent;
-} 
-
-else {
+} else {
     $maincontent = '';
 }
 /* Footer
 -----------------*/
 if (!empty($PAGE->theme->settings->getintouch)) {
     $getintouch = $PAGE->theme->settings->getintouch;
-} 
-else {
+} else {
     $getintouch = '';
 }
 if (!empty($PAGE->theme->settings->getintouchcontent)) {
     $getintouchcontent = $PAGE->theme->settings->getintouchcontent;
-} 
-else {
+} else {
     $getintouchcontent = '';
 }
 if (!empty($PAGE->theme->settings->address)) {
     $address = $PAGE->theme->settings->address;
-} 
-else {
+} else {
     $address = '';
 }
 if (!empty($PAGE->theme->settings->mobile)) {
     $mobile = $PAGE->theme->settings->mobile;
-} 
-else {
+} else {
     $mobile = '';
 }
 if (!empty($PAGE->theme->settings->mail)) {
     $mail = $PAGE->theme->settings->mail;
-} 
-else {
+} else {
     $mail = '';
 }
 if (!empty($PAGE->theme->settings->phone)) {
     $phone = $PAGE->theme->settings->phone;
-} 
-else {
+} else {
     $phone = '';
 }
 if (!empty($PAGE->theme->settings->siteheading)) {
     $siteheading = $PAGE->theme->settings->siteheading;
-} 
-else {
+} else {
     $siteheading = '';
 }
 if (!empty($PAGE->theme->settings->sitecontent)) {
     $sitecontent = $PAGE->theme->settings->sitecontent;
-} 
-else {
+} else {
     $sitecontent = '';
 }
 $hasfacebook    = (empty($PAGE->theme->settings->facebook)) ? false : $PAGE->theme->settings->facebook;
@@ -395,8 +325,9 @@ $hassocialnetworks = ($haslinkdin) ? true : false;
 if (!empty($PAGE->theme->settings->backtotop)) {
        $PAGE->requires->js('/theme/eduhub/yui/bttotop.js');
 }
-$display_marketingbox = (empty($PAGE->theme->settings->displaymarketingbox) ||$PAGE->theme->settings->displaymarketingbox < 1) ? 0 : 1;
-$display_mainbox = (empty($PAGE->theme->settings->displaymainbox) ||$PAGE->theme->settings->displaymainbox < 1) ? 0 : 1;
+$displaymarketingbox = (empty($PAGE->theme->settings->displaymarketingbox)
+||$PAGE->theme->settings->displaymarketingbox < 1) ? 0 : 1;
+$displaymainbox = (empty($PAGE->theme->settings->displaymainbox) ||$PAGE->theme->settings->displaymainbox < 1) ? 0 : 1;
 
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
@@ -405,7 +336,7 @@ echo $OUTPUT->doctype() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+<style>
     @font-face {
 	font-family:'MalayalamSangamMN-Regular';
 	src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/MalayalamSangamMN_gdi.eot');
@@ -431,11 +362,15 @@ echo $OUTPUT->doctype() ?>
 	font-stretch: normal;
 	unicode-range: U+0020-25CA;
 }
-        
-        @font-face {
+   @font-face {
   font-family: 'FontAwesome';
   src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.eot?v=3.2.1');
-  src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), 
+      url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.woff?v=3.2.1') 
+      format('woff'), 
+      url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), 
+      url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') 
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -465,8 +400,10 @@ echo $OUTPUT->doctype() ?>
                     <li class="search">
                     <div class="column">
 					<div id="sb-search" class="sb-search">
-<form role="form" class="form-inline" id="demo-1" method="get" action="<?php echo $CFG->wwwroot;?>/course/search.php" id="searchbox_demo">
-				<input class="sb-search-input" placeholder="Search Courses..." type="text" value="" name="search" id="search">
+<form role="form" class="form-inline" id="demo-1" method="get" 
+      action="<?php echo $CFG->wwwroot;?>/course/search.php" id="searchbox_demo">
+				<input class="sb-search-input" placeholder="Search Courses..." 
+                       type="text" value="" name="search" id="search">
 							<input class="sb-search-submit" type="submit" value="">
 							<span class="sb-icon-search"></span>
 						</form>
@@ -489,217 +426,337 @@ echo $OUTPUT->doctype() ?>
 </header>
 
 <div id="page">
-    <div id="page-header">
-    <div class="container-fluid">
-  <?php if($bannerheading){ ?>
-        <h1 class="new"><?php echo $bannerheading?></h1>
-        <?php } else{?>
-        <?php }?>
-       <?php if($bannercontent){ ?>
-        <p><?php echo $bannercontent?></p>
-        <?php } else{?>
-        <?php }?>
-    </div>
-    </div>
-<?php  if ($display_marketingbox) { ?>
-    <div class="marketingbox row-fluid">
-    
-        <div class="container-fluid">
-    <div class="span3">
-        <img src="<?php echo $marketing1icon ?>" />
-        <?php if($marketing1heading){ ?>
-        <h1><?php echo $marketing1heading?></h1>
-        <?php } else{?>
-        <?php }?>
-        <?php if($marketing1subheading){ ?>
-        <h4><?php echo $marketing1subheading?></h4>
-        <?php } else{?>
-        <?php }?>
+<div id="page-header">
+<div class="container-fluid">
+<?php if ($bannerheading) { ?>
+<h1 class="new"><?php echo $bannerheading?></h1>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+<?php if ($bannercontent) { ?>
+<p><?php echo $bannercontent?></p>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+</div>
+</div>
+<?php  if ($displaymarketingbox) { ?>
+<div class="marketingbox row-fluid">    
+<div class="container-fluid">
+<div class="span3">
+<img src="<?php echo $marketing1icon ?>" />        
+<?php if ($marketing1heading) { ?>
+<h1><?php echo $marketing1heading?></h1>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+<?php if ($marketing1subheading) { ?>
+<h4><?php echo $marketing1subheading?></h4>
+<?php
+} else {
+?>
+<?php 
+}
+?>       
+<?php if ($marketing1content) { ?>
+<p><?php echo $marketing1content?></p>
+<?php
+} else {
+?>
+<?php 
+}
+?>
         
-        <?php if($marketing1content){ ?>
-        <p><?php echo $marketing1content?></p>
-        <?php } else{?>
-        <?php }?>
-        
-        <?php if($marketing1url){ ?>
+        <?php if ($marketing1url) { ?>
         <a href="<?php echo $marketing1url?>"><button>More</button></a>
-        <?php } else{?>
-        <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
         
         </div>
         
             <div class="span3">
         <img src="<?php echo $marketing2icon ?>" />
-        <?php if($marketing2heading){ ?>
+        <?php if ($marketing2heading) { ?>
         <h1><?php echo $marketing2heading?></h1>
-        <?php } else{?>
-        <?php }?>
-        <?php if($marketing2subheading){ ?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+        <?php if ($marketing2subheading) { ?>
         <h4><?php echo $marketing2subheading?></h4>
-        <?php } else{?>
-        <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
         
-        <?php if($marketing2content){ ?>
+        <?php if ($marketing2content) { ?>
         <p><?php echo $marketing2content?></p>
-        <?php } else{?>
-        <?php }?>
+<?php
+} else {
+?>
+<?php 
+}
+?>
         
-        <?php if($marketing2url){ ?>
+        <?php if ($marketing2url) { ?>
         <a href="<?php echo $marketing2url?>"><button>More</button></a>
-        <?php } else{?>
-        <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
         
         </div>
         
             <div class="span3">
         <img src="<?php echo $marketing3icon ?>" />
-        <?php if($marketing3heading){ ?>
+        <?php if ($marketing3heading) { ?>
         <h1><?php echo $marketing3heading?></h1>
-        <?php } else{?>
-        <?php }?>
-        <?php if($marketing3subheading){ ?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+        <?php if ($marketing3subheading) { ?>
         <h4><?php echo $marketing3subheading?></h4>
-        <?php } else{?>
-        <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
         
-        <?php if($marketing3content){ ?>
+        <?php if ($marketing3content) { ?>
         <p><?php echo $marketing3content?></p>
-        <?php } else{?>
-        <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
         
-        <?php if($marketing3url){ ?>
+        <?php if ($marketing3url) { ?>
         <a href="<?php echo $marketing3url?>"><button>More</button></a>
-        <?php } else{?>
-        <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
         
         </div>
         
             <div class="span3">
-        <img src="<?php echo $marketing4icon ?>" />
-        <?php if($marketing4heading){ ?>
-        <h1><?php echo $marketing4heading?></h1>
-        <?php } else{?>
-        <?php }?>
-        <?php if($marketing4subheading){ ?>
-        <h4><?php echo $marketing4subheading?></h4>
-        <?php } else{?>
-        <?php }?>
-        
-        <?php if($marketing4content){ ?>
-        <p><?php echo $marketing4content?></p>
-        <?php } else{?>
-        <?php }?>
-        
-        <?php if($marketing4url){ ?>
-        <a href="<?php echo $marketing4url?>"><button>More</button></a>
-        <?php } else{?>
-        <?php }?>
-        
-        </div>
-    <div class="clearfix"></div>
-    </div>
+<img src="<?php echo $marketing4icon ?>" />
+<?php if ($marketing4heading) { ?>
+<h1><?php echo $marketing4heading?></h1>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+<?php if ($marketing4subheading) { ?>
+<h4><?php echo $marketing4subheading?></h4>
+<?php 
+} else {
+?>
+<?php 
+}
+?>       
+<?php if ($marketing4content) { ?>
+<p><?php echo $marketing4content?></p>
+<?php 
+} else {
+?>
+<?php 
+}
+?>        
+<?php if ($marketing4url) { ?>
+<a href="<?php echo $marketing4url?>"><button>More</button></a>
+<?php 
+} else {
+?>
+<?php 
+}
+?>        
+</div>
+<div class="clearfix"></div>
+</div>
     
-    </div>
-    <?php }else{?>				
-  <?php }?>
-    
-    <?php  if ($display_mainbox) { ?>
-    <div class="mainbox">
-   <div class="container-fluid">
-        <?php if($mainheading){ ?>
-        <h1><?php echo $mainheading?></h1>
-        <?php } else{?>
-        <?php }?>
-       <?php if($maincontent){ ?>
-        <p><?php echo $maincontent?></p>
-        <?php } else{?>
-        <?php }?>
+</div>
+<?php 
+} else {
+?>				
+<?php 
+}
+?>  
+<?php  if ($displaymainbox) { ?>
+<div class="mainbox">
+<div class="container-fluid">
+<?php if ($mainheading) { ?>
+<h1><?php echo $mainheading?></h1>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+<?php if ($maincontent) { ?>
+<p><?php echo $maincontent?></p>
+<?php 
+} else {
+?>
+<?php 
+}
+?>      
+<div class="row-fluid">
+ <div class="span3">
+<img src="<?php echo $mainbox1icon ?>" />
+<?php if ($mainbox1heading) { ?>
+<h1><?php echo $mainbox1heading?></h1>
+<?php 
+} else {
+?>
+<?php 
+}
+?>       
+<?php if ($mainbox1content) { ?>
+<p><?php echo $mainbox1content?></p>
+<?php 
+} else {
+?>
+<?php 
+}
+?>       
+<?php if ($mainbox1url) { ?>
+<a href="<?php echo $mainbox1url?>"><button>More</button></a>
+<?php 
+} else {
+?>
+<?php 
+}
+?>      
+</div>
        
-       <div class="row-fluid">
-         <div class="span3">
-        <img src="<?php echo $mainbox1icon ?>" />
-        <?php if($mainbox1heading){ ?>
-        <h1><?php echo $mainbox1heading?></h1>
-        <?php } else{?>
-        <?php }?>
-        
-        <?php if($mainbox1content){ ?>
-        <p><?php echo $mainbox1content?></p>
-        <?php } else{?>
-        <?php }?>
-        
-        <?php if($mainbox1url){ ?>
-        <a href="<?php echo $mainbox1url?>"><button>More</button></a>
-        <?php } else{?>
-        <?php }?>
-        
-        </div>
+<div class="span3">
+<img src="<?php echo $mainbox2icon ?>" />
+<?php if ($mainbox2heading) { ?>
+ <h1><?php echo $mainbox2heading?></h1>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+<?php if ($mainbox2content) { ?>
+<p><?php echo $mainbox2content?></p>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+<?php if ($mainbox2url) { ?>
+<a href="<?php echo $mainbox2url?>"><button>More</button></a>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+</div>
        
-       <div class="span3">
-        <img src="<?php echo $mainbox2icon ?>" />
-        <?php if($mainbox2heading){ ?>
-        <h1><?php echo $mainbox2heading?></h1>
-        <?php } else{?>
-        <?php }?>
+<div class="span3">
+<img src="<?php echo $mainbox3icon ?>" />
+<?php if ($mainbox3heading) { ?>
+<h1><?php echo $mainbox3heading?></h1>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+<?php if ($mainbox3content) { ?>
+<p><?php echo $mainbox3content?></p>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+<?php if ($mainbox3url) { ?>
+<a href="<?php echo $mainbox3url?>"><button>More</button></a>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
         
-        <?php if($mainbox2content){ ?>
-        <p><?php echo $mainbox2content?></p>
-        <?php } else{?>
-        <?php }?>
-        
-        <?php if($mainbox2url){ ?>
-        <a href="<?php echo $mainbox2url?>"><button>More</button></a>
-        <?php } else{?>
-        <?php }?>
-        
-        </div>
-       
-       <div class="span3">
-        <img src="<?php echo $mainbox3icon ?>" />
-        <?php if($mainbox3heading){ ?>
-        <h1><?php echo $mainbox3heading?></h1>
-        <?php } else{?>
-        <?php }?>
-        
-        <?php if($mainbox3content){ ?>
-        <p><?php echo $mainbox3content?></p>
-        <?php } else{?>
-        <?php }?>
-        
-        <?php if($mainbox3url){ ?>
-        <a href="<?php echo $mainbox3url?>"><button>More</button></a>
-        <?php } else{?>
-        <?php }?>
-        
-        </div>
+</div>
        
        
-       <div class="span3">
-        <img src="<?php echo $mainbox4icon ?>" />
-        <?php if($mainbox4heading){ ?>
-        <h1><?php echo $mainbox4heading?></h1>
-        <?php } else{?>
-        <?php }?>
-        
-        <?php if($mainbox4content){ ?>
-        <p><?php echo $mainbox4content?></p>
-        <?php } else{?>
-        <?php }?>
-        
-        <?php if($mainbox4url){ ?>
-        <a href="<?php echo $mainbox4url?>"><button>More</button></a>
-        <?php } else{?>
-        <?php }?>
-        
-        </div>
+<div class="span3">
+<img src="<?php echo $mainbox4icon ?>" />
+<?php if ($mainbox4heading) { ?>
+<h1><?php echo $mainbox4heading?></h1>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+<?php if ($mainbox4content) { ?>
+<p><?php echo $mainbox4content?></p>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+<?php if ($mainbox4url) { ?>
+<a href="<?php echo $mainbox4url?>">
+<button>More</button>
+</a>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
+</div>
         
         
 <div class="clearfix"></div>
     </div>
     </div>
     </div>
-    <?php }else{?>				
-  <?php }?>
+<?php 
+} else {
+?>				
+<?php 
+}
+?>
     
     <div class="container-fluid">
     <div id="page-content" class="row-fluid">
@@ -720,7 +777,7 @@ echo $OUTPUT->doctype() ?>
 
 
 </div>
-    <div class="top-footer row-fluid">
+        <div class="top-footer row-fluid">
      <div class="container-fluid">
          <div class="span6">
          <h3><?php echo $getintouch?></h3>
@@ -728,33 +785,47 @@ echo $OUTPUT->doctype() ?>
              
              <ul>
              <li>
-                 
-                 <?php if($address){ ?>
-                 
+                <?php if ($address) { ?>
                 <p><i class="icon-map-marker"></i> <?php echo $address?></p>
-                <?php } else{?>
-                <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
                  </li>
                  
-                 <li>
-                 <?php if($mobile){ ?>
+             <li>
+                 <?php if ($mobile) { ?>
                 <p><i class="icon-mobile-phone"></i> <?php echo $mobile?></p>
-                <?php } else{?>
-                <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
                  </li>
                  
-                 <li>
-                 <?php if($mail){ ?>
+             <li>
+                 <?php if ($mail) { ?>
                 <p><i class="icon-envelope"></i> <?php echo $mail?></p>
-                <?php } else{?>
-                <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
                  </li>
                  
-                 <li>
-                 <?php if($phone){ ?>
+             <li>
+                 <?php if ($phone) { ?>
                 <p><i class="icon-phone-sign"></i> <?php echo $phone?></p>
-                <?php } else{?>
-                <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
                  </li>
              
              </ul>
@@ -763,39 +834,78 @@ echo $OUTPUT->doctype() ?>
          <h3 class="blue"><?php echo $siteheading ?></h3>
              <p><?php echo $sitecontent ?></p>
          <ul class="social">
-  <?php if ($hasfacebook) { ?>
-                <li><a href="<?php echo $hasfacebook; ?>" target="_blank" /><i class="facebook"><img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/facebook.png" alt=""/></i></a></li>
-                <?php } ?>
+<?php if ($hasfacebook) { ?>
+                <li>
+                    <a href="<?php echo $hasfacebook; ?>" target="_blank" />
+                    <i class="facebook">
+                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/facebook.png" alt=""/>
+                    </i>
+                    </a>
+                    </li>
+<?php 
+}
+?>
 
  
-  <?php if ($hastwitter) { ?>
-                <li><a href="<?php echo $hastwitter; ?>" target="_blank" /><i class="twitter"><img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/twitter.png" alt=""/></i></a></li>
-                <?php } ?>
+<?php if ($hastwitter) { ?>
+                <li>
+                    <a href="<?php echo $hastwitter; ?>" target="_blank" />
+                    <i class="twitter">
+                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/twitter.png" alt=""/>
+                    </i>
+                    </a>
+                    </li>
+<?php 
+}
+?>
                 
 <?php if ($haspintirest) { ?>
-                <li><a href="<?php echo $haspintirest; ?>" target="_blank" /><i class="pintirest"><img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/pintirest.png" alt=""/></i></a></li>
-                <?php } ?>
+                <li>
+                    <a href="<?php echo $haspintirest; ?>" target="_blank" />
+                    <i class="pintirest">
+                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/pintirest.png" 
+                         alt=""/>                       
+                    </i>
+                    </a>
+                    </li>
+<?php 
+}
+?>
 
   <?php if ($hasgoogleplus) { ?>
-                <li><a href="<?php echo $hasgoogleplus; ?>" target="_blank" /><i class="googleplus"><img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/googleplus.png" alt=""/></i></a></li>
-                <?php } ?>
+                <li>
+                    <a href="<?php echo $hasgoogleplus; ?>" target="_blank" />
+                    <i class="googleplus">
+                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/googleplus.png" 
+                         alt=""/>                       
+                    </i>
+                    </a>
+                    </li>
+<?php 
+}
+?>
 
 <?php if ($haslinkdin) { ?>
-                <li><a href="<?php echo $haslinkdin; ?>" target="_blank" /><i class="linkdin"><img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/linkdin.png" alt=""/></i></a></li>
-                <?php } ?>
+                <li>
+                    <a href="<?php echo $haslinkdin; ?>" target="_blank" />
+                    <i class="linkdin">
+                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/linkdin.png" alt=""/>
+                    </i>
+                    </a>
+                    </li>
+<?php 
+}
+?>
  
  
   </ul>
          </div>
          <div class="clearfix"></div>
     <div class="ftr-copyright">
-	     
-	               <?php if ($hascopyright) {
+	 <?php if ($hascopyright) {
         echo '<p class="copy">Copyright &copy; '.date("Y").' '.$hascopyright.'</p>';
-    } ?>
-	     
+} ?>
      </div>
-    
         </div>
     </div>
     
@@ -808,7 +918,7 @@ echo $OUTPUT->doctype() ?>
         <?php
         echo $html->footnote;
         echo $OUTPUT->login_info();
-        //echo $OUTPUT->home_link();
+
         echo $OUTPUT->standard_footer_html();
         ?>
              <div>developed by <a href="http://www.themecaters.com/" style="color: #3e65a0;">themecaters.com</a></div>
@@ -816,13 +926,15 @@ echo $OUTPUT->doctype() ?>
     </footer>
 
     <?php echo $OUTPUT->standard_end_of_body_html();
-// -----code for back to top----------------------
+// Code for back to top.
 if (!empty($PAGE->theme->settings->backtotop)) {
 ?>
 <div id="back-to-top" style="display: none;"> 
     <a class="arrow" href="#" title="<?php echo get_string('backtotop', 'theme_eduhub')?>"><i class="icon-circle-arrow-up"></i></a> 
 </div>
-<?php }?>
+<?php 
+}
+?>
 </div>
 
 <script type="text/javascript">

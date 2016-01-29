@@ -69,7 +69,7 @@ body{
   font-size: 1em;
   line-height: 1.5em;
   color:#727272;
-} 
+}
 body.pagelayout-frontpage #page-header{
   background-image: url([[setting:headerimg]]);
   background-position: left top;
@@ -396,7 +396,7 @@ body.pagelayout-frontpage #page-content{
   padding: 2em 0;
   margin-bottom: 0;
   margin-top: 2em;
-  font-family:'MyriadPro-Regular';    
+  font-family:'MyriadPro-Regular';
 }
 .mainbox h1{
   text-align: center;
@@ -453,9 +453,9 @@ table.wrapper tr td span.tst-wrap{display: block;}
   padding-left: 7px;
 }
 .shadow-frontpage-course-list-all .coursebox{clear:both; float:none;}
-#site-news-forum h2, 
-#frontpage-course-list h2, 
-#frontpage-category-names h2, 
+#site-news-forum h2,
+#frontpage-course-list h2,
+#frontpage-category-names h2,
 #frontpage-category-combo h2{
   color: #565656;
   font-size: 2.2em;
@@ -776,7 +776,7 @@ text-transform: uppercase;
 }
 .block .minicalendar td.today, .block .minicalendar td.today a{
  background-color: #3e65a0;
-  color: #fff; 
+  color: #fff;
 }
 .block .minicalendar th abbr[title]{
   border-bottom: none;
@@ -796,7 +796,7 @@ text-transform: uppercase;
   padding-bottom: 10px;
 }
 .block .content h3.eventskey{
-  color: #3e65a0; 
+  color: #3e65a0;
 }
 /* Sitetopic CSS
 --------------------*/
@@ -933,7 +933,7 @@ display: block;
 /* Course Page CSS
 ----------------------*/
 .course-content ul li.section.main{
-  background-image: url([[pix:theme|menu-bg]]);    
+  background-image: url([[pix:theme|menu-bg]]);
   border: 1px dashed #ccc;
 }
 
@@ -942,12 +942,12 @@ display: block;
 table.calendarmonth{
   border: 1px solid #c4c4c4;
   border-top:none;
-  margin-top: 0; 
+  margin-top: 0;
 }
-table.calendarmonth th{ 
+table.calendarmonth th{
   padding: 15px 0;
   background-color: #f5f5f5;
-  color: #333;  
+  color: #333;
   font-weight: normal;
   font-size: 1.2em;
   border: none;
@@ -988,7 +988,7 @@ table.calendarmonth th{
 ------------------------*/
 body#page-login-index section{
   background-image: url([[pix:theme|menu-bg]]);
-  background-repeat: repeat; 
+  background-repeat: repeat;
   border: 1px solid #ccc;
 }
 .loginbox h2, .loginbox .subcontent h2{
@@ -1050,10 +1050,9 @@ body#page-login-index section{
       margin-left: 0 !important;
 
     }
-    
-    aside#block-region-side-post,
-    aside#block-region-side-pre,
-    div#region-main-box,section#region-main{
+aside#block-region-side-post,
+aside#block-region-side-pre,
+div#region-main-box,section#region-main{
       width: 100% !important;
       float: none !important;
       margin-left: 0;
@@ -1187,5 +1186,3 @@ a,#dockeditempanel .dockeditempanel_hd h2,
 .navbar-inner{
   border-color: [[setting:sitecolor]] !important;
 }
-
-

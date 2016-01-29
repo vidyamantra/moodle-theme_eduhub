@@ -28,50 +28,42 @@ $html = theme_eduhub_get_html_for_settings($OUTPUT, $PAGE);
 -----------------*/
 if (!empty($PAGE->theme->settings->getintouch)) {
     $getintouch = $PAGE->theme->settings->getintouch;
-} 
-else {
+} else {
     $getintouch = '';
 }
 if (!empty($PAGE->theme->settings->getintouchcontent)) {
     $getintouchcontent = $PAGE->theme->settings->getintouchcontent;
-} 
-else {
+} else {
     $getintouchcontent = '';
 }
 if (!empty($PAGE->theme->settings->address)) {
     $address = $PAGE->theme->settings->address;
-} 
-else {
+} else {
     $address = '';
 }
 if (!empty($PAGE->theme->settings->mobile)) {
     $mobile = $PAGE->theme->settings->mobile;
-} 
-else {
+} else {
     $mobile = '';
 }
 if (!empty($PAGE->theme->settings->mail)) {
     $mail = $PAGE->theme->settings->mail;
-} 
-else {
+} else {
     $mail = '';
 }
 if (!empty($PAGE->theme->settings->phone)) {
     $phone = $PAGE->theme->settings->phone;
-} 
-else {
+} else {
     $phone = '';
 }
 if (!empty($PAGE->theme->settings->siteheading)) {
     $siteheading = $PAGE->theme->settings->siteheading;
-} 
-else {
+} else {
     $siteheading = '';
 }
 if (!empty($PAGE->theme->settings->sitecontent)) {
     $sitecontent = $PAGE->theme->settings->sitecontent;
-} 
-else {
+} else {
     $sitecontent = '';
 }
 $hasfacebook    = (empty($PAGE->theme->settings->facebook)) ? false : $PAGE->theme->settings->facebook;
@@ -98,23 +90,22 @@ $haslinkdin    = (empty($PAGE->theme->settings->linkdin)) ? false : $PAGE->theme
 
 // If any of the above social networks are true, sets this to true.
 $hassocialnetworks = ($haslinkdin) ? true : false;
-if (!empty($PAGE->theme->settings->backtotop)) {
-       $PAGE->requires->js('/theme/eduhub/yui/bttotop.js');
-}
+
 if (!empty($PAGE->theme->settings->copyright)) {
     $hascopyright = $PAGE->theme->settings->copyright;
-} 
-else {
-    $hascopyright = 'technologicaleducation';
+} else {
+    $hascopyright = '';
 }
+// Logo.
 if (!empty($PAGE->theme->settings->logo)) {
-    	$logourl = $PAGE->theme->setting_file_url('logo', 'logo');
-}else{
-  $logourl =$OUTPUT->pix_url('/logo', 'theme');
+     $logourl = $PAGE->theme->setting_file_url('logo', 'logo');
+} else {
+     $logourl = $OUTPUT->pix_url('/logo', 'theme');
 }
 if (!empty($PAGE->theme->settings->backtotop)) {
-       $PAGE->requires->js('/theme/eduhub/yui/bttotop.js');
+    $PAGE->requires->js('/theme/eduhub/yui/bttotop.js');
 }
+
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
@@ -122,7 +113,7 @@ echo $OUTPUT->doctype() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+<style>
     @font-face {
 	font-family:'MalayalamSangamMN-Regular';
 	src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/MalayalamSangamMN_gdi.eot');
@@ -151,7 +142,12 @@ echo $OUTPUT->doctype() ?>
    @font-face {
   font-family: 'FontAwesome';
   src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.eot?v=3.2.1');
-  src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), 
+      url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.woff?v=3.2.1') 
+      format('woff'), 
+      url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), 
+      url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') 
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -177,13 +173,13 @@ echo $OUTPUT->doctype() ?>
             <?php echo $OUTPUT->navbar_button(); ?>
             <ul class="nav pull-right">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                
                     <li class="search">
                     <div class="column">
 					<div id="sb-search" class="sb-search">
-<form role="form" class="form-inline" id="demo-1" method="get" action="<?php echo $CFG->wwwroot;?>/course/search.php" id="searchbox_demo">
-				<input class="sb-search-input" placeholder="Search Courses..." type="text" value="" name="search" id="search">
-							<input class="sb-search-submit" type="submit" value="">
+                    <form role="form" class="form-inline" id="demo-1" method="get" 
+                          action="<?php echo $CFG->wwwroot;?>/course/search.php" id="searchbox_demo">
+				    <input class="sb-search-input" placeholder="Search Courses..." type="text" value="" name="search" id="search">
+                          <input class="sb-search-submit" type="submit" value="">
 							<span class="sb-icon-search"></span>
 						</form>
 					</div>
@@ -233,33 +229,47 @@ echo $OUTPUT->doctype() ?>
              
              <ul>
              <li>
-                 
-                 <?php if($address){ ?>
-                 
+                <?php if ($address) { ?>
                 <p><i class="icon-map-marker"></i> <?php echo $address?></p>
-                <?php } else{?>
-                <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
                  </li>
                  
-                 <li>
-                 <?php if($mobile){ ?>
+             <li>
+                 <?php if ($mobile) { ?>
                 <p><i class="icon-mobile-phone"></i> <?php echo $mobile?></p>
-                <?php } else{?>
-                <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
                  </li>
                  
-                 <li>
-                 <?php if($mail){ ?>
+             <li>
+                 <?php if ($mail) { ?>
                 <p><i class="icon-envelope"></i> <?php echo $mail?></p>
-                <?php } else{?>
-                <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
                  </li>
                  
-                 <li>
-                 <?php if($phone){ ?>
+             <li>
+                 <?php if ($phone) { ?>
                 <p><i class="icon-phone-sign"></i> <?php echo $phone?></p>
-                <?php } else{?>
-                <?php }?>
+<?php 
+} else {
+?>
+<?php 
+}
+?>
                  </li>
              
              </ul>
@@ -268,39 +278,78 @@ echo $OUTPUT->doctype() ?>
          <h3 class="blue"><?php echo $siteheading ?></h3>
              <p><?php echo $sitecontent ?></p>
          <ul class="social">
-  <?php if ($hasfacebook) { ?>
-                <li><a href="<?php echo $hasfacebook; ?>" target="_blank" /><i class="facebook"><img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/facebook.png" alt=""/></i></a></li>
-                <?php } ?>
+<?php if ($hasfacebook) { ?>
+                <li>
+                    <a href="<?php echo $hasfacebook; ?>" target="_blank" />
+                    <i class="facebook">
+                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/facebook.png" alt=""/>
+                    </i>
+                    </a>
+                    </li>
+<?php 
+}
+?>
 
  
-  <?php if ($hastwitter) { ?>
-                <li><a href="<?php echo $hastwitter; ?>" target="_blank" /><i class="twitter"><img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/twitter.png" alt=""/></i></a></li>
-                <?php } ?>
+<?php if ($hastwitter) { ?>
+                <li>
+                    <a href="<?php echo $hastwitter; ?>" target="_blank" />
+                    <i class="twitter">
+                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/twitter.png" alt=""/>
+                    </i>
+                    </a>
+                    </li>
+<?php 
+}
+?>
                 
 <?php if ($haspintirest) { ?>
-                <li><a href="<?php echo $haspintirest; ?>" target="_blank" /><i class="pintirest"><img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/pintirest.png" alt=""/></i></a></li>
-                <?php } ?>
+                <li>
+                    <a href="<?php echo $haspintirest; ?>" target="_blank" />
+                    <i class="pintirest">
+                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/pintirest.png" 
+                         alt=""/>                       
+                    </i>
+                    </a>
+                    </li>
+<?php 
+}
+?>
 
   <?php if ($hasgoogleplus) { ?>
-                <li><a href="<?php echo $hasgoogleplus; ?>" target="_blank" /><i class="googleplus"><img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/googleplus.png" alt=""/></i></a></li>
-                <?php } ?>
+                <li>
+                    <a href="<?php echo $hasgoogleplus; ?>" target="_blank" />
+                    <i class="googleplus">
+                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/googleplus.png" 
+                         alt=""/>                       
+                    </i>
+                    </a>
+                    </li>
+<?php 
+}
+?>
 
 <?php if ($haslinkdin) { ?>
-                <li><a href="<?php echo $haslinkdin; ?>" target="_blank" /><i class="linkdin"><img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/linkdin.png" alt=""/></i></a></li>
-                <?php } ?>
+                <li>
+                    <a href="<?php echo $haslinkdin; ?>" target="_blank" />
+                    <i class="linkdin">
+                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/linkdin.png" alt=""/>
+                    </i>
+                    </a>
+                    </li>
+<?php 
+}
+?>
  
  
   </ul>
          </div>
          <div class="clearfix"></div>
     <div class="ftr-copyright">
-	     
-	               <?php if ($hascopyright) {
+	 <?php if ($hascopyright) {
         echo '<p class="copy">Copyright &copy; '.date("Y").' '.$hascopyright.'</p>';
-    } ?>
-	     
+} ?>
      </div>
-    
         </div>
     </div>
     
@@ -313,7 +362,6 @@ echo $OUTPUT->doctype() ?>
         <?php
         echo $html->footnote;
         echo $OUTPUT->login_info();
-        //echo $OUTPUT->home_link();
         echo $OUTPUT->standard_footer_html();
         ?>
         <div>developed by <a href="http://www.themecaters.com/" style="color: #3e65a0;">themecaters.com</a></div>
@@ -321,13 +369,15 @@ echo $OUTPUT->doctype() ?>
     </footer>
 
     <?php echo $OUTPUT->standard_end_of_body_html();
-// -----code for back to top----------------------
+// Code for back to top.
 if (!empty($PAGE->theme->settings->backtotop)) {
 ?>
 <div id="back-to-top" style="display: none;"> 
     <a class="arrow" href="#" title="<?php echo get_string('backtotop', 'theme_eduhub')?>">&nbsp;</a> 
 </div>
-<?php }?>
+<?php 
+}
+?>
 
 </div>
 <script type="text/javascript">

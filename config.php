@@ -30,22 +30,20 @@
 
 $THEME->name = 'eduhub';
 
-/////////////////////////////////
+// Theme.
 // The only thing you need to change in this file when copying it to
 // create a new theme is the name above. You also need to change the name
 // in version.php and lang/en/theme_eduhub.php as well.
-//////////////////////////////////
+// Theme.
 //
 $THEME->doctype = 'html5';
-$THEME->parents = array('clean','bootstrapbase');
-$THEME->sheets = array('custom','font-awesome','font-awesome.min','font-awesome-ie7','font-awesome-ie7.min');
+$THEME->parents = array('clean', 'bootstrapbase');
+$THEME->sheets = array('custom', 'font-awesome', 'font-awesome.min', 'font-awesome-ie7', 'font-awesome-ie7.min');
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
 $THEME->enable_dock = true;
 $THEME->editor_sheets = array();
-
 $THEME->layouts = array(
-    
 // The site home page.
     'frontpage' => array(
         'file' => 'frontpage.php',
@@ -53,11 +51,8 @@ $THEME->layouts = array(
         'defaultregion' => 'side-post',
         'options' => array('nonavbar' => true),
     ),
-
 );
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->csspostprocess = 'theme_eduhub_process_css';
-
 $THEME->javascripts_footer = array();
-$THEME->javascripts = array('jquery-1.11.2.min','jquery.min');
-
+$THEME->javascripts = array('jquery-1.11.2.min', 'jquery.min');

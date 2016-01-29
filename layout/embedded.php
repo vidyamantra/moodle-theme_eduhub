@@ -31,7 +31,7 @@ echo $OUTPUT->doctype() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+<style>
     @font-face {
 	font-family:'MalayalamSangamMN-Regular';
 	src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/MalayalamSangamMN_gdi.eot');
@@ -57,10 +57,15 @@ echo $OUTPUT->doctype() ?>
 	font-stretch: normal;
 	unicode-range: U+0020-25CA;
 }
-  @font-face {
+   @font-face {
   font-family: 'FontAwesome';
   src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.eot?v=3.2.1');
-  src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  src: url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), 
+      url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.woff?v=3.2.1') 
+      format('woff'), 
+      url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), 
+      url('<?php echo $CFG->wwwroot;?>/theme/eduhub/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') 
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -75,12 +80,14 @@ echo $OUTPUT->doctype() ?>
     </div>
 </div>
 <?php echo $OUTPUT->standard_end_of_body_html();
-// -----code for back to top----------------------
+// Code for back to top.
 if (!empty($PAGE->theme->settings->backtotop)) {
 ?>
 <div id="back-to-top" style="display: none;"> 
     <a class="arrow" href="#" title="<?php echo get_string('backtotop', 'theme_eduhub')?>">&nbsp;</a> 
 </div>
-<?php }?>
+<?php 
+}
+?>
 </body>
 </html>

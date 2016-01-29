@@ -32,7 +32,9 @@ defined('MOODLE_INTERNAL') || die;
 
 $plugin->version   = 2015111600;
 $plugin->requires  = 2015111000;
+$plugin->release = '1.0 (Build: 2016012101)';
 $plugin->component = 'theme_eduhub';
+$plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = array(
     'theme_bootstrapbase'  => 2015111000,
 );
