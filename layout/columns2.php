@@ -230,134 +230,126 @@ echo $OUTPUT->doctype() ?>
     </div>
     </div>
 
-        <div class="top-footer row-fluid">
+    <div class="top-footer row-fluid">
      <div class="container-fluid">
-         <div class="span6">
-         <h3><?php echo $getintouch?></h3>
-             <p><?php echo $getintouchcontent?></p>
-             
-             <ul>
+        <div class="span6">
+          <h3><?php echo $getintouch?></h3>
+           <p><?php echo $getintouchcontent?></p>
+           <ul>
              <li>
-                <?php if ($address) { ?>
-                <p><i class="icon-map-marker"></i> <?php echo $address?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-                 </li>
+               <?php if ($address) { ?>
+               <p><i class="icon-map-marker"></i> <?php echo $address?></p>
+               <?php 
+               } else {
+               ?>
+               <?php 
+               }
+               ?>
+             </li>
+                 
+            <li>
+               <?php if ($mobile) { ?>
+               <p><i class="icon-mobile-phone"></i> <?php echo $mobile?></p>
+               <?php 
+               } else {
+               ?>
+               <?php 
+               }
+               ?>
+            </li>
+                 
+            <li>
+               <?php if ($mail) { ?>
+               <p><i class="icon-envelope"></i> <?php echo $mail?></p>
+               <?php 
+               } else {
+               ?>
+               <?php 
+               }
+               ?>
+            </li>
                  
              <li>
-                 <?php if ($mobile) { ?>
-                <p><i class="icon-mobile-phone"></i> <?php echo $mobile?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-                 </li>
-                 
-             <li>
-                 <?php if ($mail) { ?>
-                <p><i class="icon-envelope"></i> <?php echo $mail?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-                 </li>
-                 
-             <li>
-                 <?php if ($phone) { ?>
-                <p><i class="icon-phone-sign"></i> <?php echo $phone?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-                 </li>
-             
-             </ul>
-         </div>
-         <div class="span4">
-         <h3 class="blue"><?php echo $siteheading ?></h3>
-             <p><?php echo $sitecontent ?></p>
-         <ul class="social">
-<?php if ($hasfacebook) { ?>
-                <li>
-                    <a href="<?php echo $hasfacebook; ?>" target="_blank" />
-                    <i class="facebook">
-                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/facebook.png" alt=""/>
-                    </i>
-                    </a>
-                    </li>
-<?php 
-}
-?>
-
- 
-<?php if ($hastwitter) { ?>
-                <li>
-                    <a href="<?php echo $hastwitter; ?>" target="_blank" />
-                    <i class="twitter">
-                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/twitter.png" alt=""/>
-                    </i>
-                    </a>
-                    </li>
-<?php 
-}
-?>
-                
-<?php if ($haspintirest) { ?>
-                <li>
-                    <a href="<?php echo $haspintirest; ?>" target="_blank" />
-                    <i class="pintirest">
-                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/pintirest.png" 
+               <?php if ($phone) { ?>
+               <p><i class="icon-phone-sign"></i> <?php echo $phone?></p>
+               <?php 
+               } else {
+               ?>
+               <?php 
+               }
+               ?>
+            </li>
+        </ul>
+        </div>
+        <div class="span4">
+          <h3 class="blue"><?php echo $siteheading ?></h3>
+          <p><?php echo $sitecontent ?></p>
+        <ul class="social">
+           <?php if ($hasfacebook) { ?>
+           <li>
+            <a href="<?php echo $hasfacebook; ?>" target="_blank" />
+            <i class="facebook">
+             <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/facebook.png" alt=""/>
+            </i>
+            </a>
+           </li>
+            <?php 
+            }
+            ?>
+          <?php if ($hastwitter) { ?>
+           <li>
+            <a href="<?php echo $hastwitter; ?>" target="_blank" />
+             <i class="twitter">
+              <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/twitter.png" alt=""/>
+            </i>
+            </a>
+           </li>
+            <?php 
+            }
+            ?>
+         <?php if ($haspintirest) { ?>
+           <li>
+            <a href="<?php echo $haspintirest; ?>" target="_blank" />
+            <i class="pintirest">
+             <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/pintirest.png" 
                          alt=""/>                       
-                    </i>
-                    </a>
-                    </li>
-<?php 
-}
-?>
-
-  <?php if ($hasgoogleplus) { ?>
-                <li>
-                    <a href="<?php echo $hasgoogleplus; ?>" target="_blank" />
-                    <i class="googleplus">
-                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/googleplus.png" 
+            </i>
+            </a>
+          </li>
+            <?php 
+            }
+            ?>
+        <?php if ($hasgoogleplus) { ?>
+           <li>
+            <a href="<?php echo $hasgoogleplus; ?>" target="_blank" />
+            <i class="googleplus">
+             <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/googleplus.png" 
                          alt=""/>                       
-                    </i>
-                    </a>
-                    </li>
-<?php 
-}
-?>
+            </i>
+            </a>
+           </li>
+            <?php 
+            }
+            ?>
+         <?php if ($haslinkdin) { ?>
+           <li>
+            <a href="<?php echo $haslinkdin; ?>" target="_blank" />
+            <i class="linkdin">
+             <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/linkdin.png" alt=""/>
+            </i>
+            </a>
+           </li>
+            <?php 
+            }
+            ?>
+        </ul>
+        </div>
+        <div class="clearfix"></div>
 
-<?php if ($haslinkdin) { ?>
-                <li>
-                    <a href="<?php echo $haslinkdin; ?>" target="_blank" />
-                    <i class="linkdin">
-                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/linkdin.png" alt=""/>
-                    </i>
-                    </a>
-                    </li>
-<?php 
-}
-?>
- 
- 
-  </ul>
-         </div>
-         <div class="clearfix"></div>
     <div class="ftr-copyright">
-	 <?php if ($hascopyright) {
+        <?php if ($hascopyright) {
         echo '<p class="copy">Copyright &copy; '.date("Y").' '.$hascopyright.'</p>';
-} ?>
+        } ?>
      </div>
         </div>
     </div>

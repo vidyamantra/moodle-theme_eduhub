@@ -388,7 +388,7 @@ echo $OUTPUT->doctype() ?>
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
             <div class="pull-left">
-            <a class="logo" href="<?php echo $CFG->wwwroot;?>"><img src="<?php echo $logourl?>" alt="logo"/> </a>
+            <a class="logo" href="<?php echo $CFG->wwwroot;?>"><img src="<?php echo $logourl?>" alt="logo"/>             </a>
             </div>
             <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo
                 format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));
@@ -398,211 +398,198 @@ echo $OUTPUT->doctype() ?>
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
                 
                     <li class="search">
-                    <div class="column">
-					<div id="sb-search" class="sb-search">
-<form role="form" class="form-inline" id="demo-1" method="get" 
-      action="<?php echo $CFG->wwwroot;?>/course/search.php" id="searchbox_demo">
-				<input class="sb-search-input" placeholder="Search Courses..." 
-                       type="text" value="" name="search" id="search">
+                     <div class="column">
+					  <div id="sb-search" class="sb-search">
+                        <form role="form" class="form-inline" id="demo-1" method="get" 
+                        action="<?php echo $CFG->wwwroot;?>/course/search.php" id="searchbox_demo">
+				         <input class="sb-search-input" placeholder="Search Courses..." 
+                           type="text" value="" name="search" id="search">
 							<input class="sb-search-submit" type="submit" value="">
 							<span class="sb-icon-search"></span>
 						</form>
-					</div>
-				</div>
+					  </div>
+				     </div>
                     </li>
                 </ul>
         <?php echo $OUTPUT->user_menu(); ?>
-            
             <div class="nav-collapse collapse">
-                
-                
                 <?php echo $OUTPUT->custom_menu(); ?>
             </div>
-            
             <div class="clearfix"></div>
         </div>
-        
     </nav>
 </header>
 
 <div id="page">
-<div id="page-header">
-<div class="container-fluid">
-<?php if ($bannerheading) { ?>
-<h1 class="new"><?php echo $bannerheading?></h1>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-<?php if ($bannercontent) { ?>
-<p><?php echo $bannercontent?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
+ <div id="page-header">
+  <div class="container-fluid">
+   <?php if ($bannerheading) { ?>
+     <h1 class="new"><?php echo $bannerheading?></h1>
+       <?php 
+        } else {
+        ?>
+        <?php 
+        }
+        ?>
+        <?php if ($bannercontent) { ?>
+        <p><?php echo $bannercontent?></p>
+        <?php 
+        } else {
+        ?>
+        <?php 
+        }
+        ?>
+  </div>
 </div>
-</div>
+    
 <?php  if ($displaymarketingbox) { ?>
 <div class="marketingbox row-fluid">    
 <div class="container-fluid">
-<div class="span3">
-<img src="<?php echo $marketing1icon ?>" />        
-<?php if ($marketing1heading) { ?>
-<h1><?php echo $marketing1heading?></h1>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-<?php if ($marketing1subheading) { ?>
-<h4><?php echo $marketing1subheading?></h4>
-<?php
-} else {
-?>
-<?php 
-}
-?>       
-<?php if ($marketing1content) { ?>
-<p><?php echo $marketing1content?></p>
-<?php
-} else {
-?>
-<?php 
-}
-?>
+  <div class="span3">
+   <img src="<?php echo $marketing1icon ?>" />        
+   <?php if ($marketing1heading) { ?>
+   <h1><?php echo $marketing1heading?></h1>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+   <?php if ($marketing1subheading) { ?>
+   <h4><?php echo $marketing1subheading?></h4>
+   <?php
+   } else {
+   ?>
+      <?php 
+   }
+   ?>       
+   <?php if ($marketing1content) { ?>
+   <p><?php echo $marketing1content?></p>
+   <?php
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+   <?php if ($marketing1url) { ?>
+   <a href="<?php echo $marketing1url?>"><button>More</button></a>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+  </div>
         
-        <?php if ($marketing1url) { ?>
-        <a href="<?php echo $marketing1url?>"><button>More</button></a>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
+  <div class="span3">
+   <img src="<?php echo $marketing2icon ?>" />
+   <?php if ($marketing2heading) { ?>
+   <h1><?php echo $marketing2heading?></h1>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+   <?php if ($marketing2subheading) { ?>
+   <h4><?php echo $marketing2subheading?></h4>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
         
-        </div>
+   <?php if ($marketing2content) { ?>
+   <p><?php echo $marketing2content?></p>
+   <?php
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+   <?php if ($marketing2url) { ?>
+   <a href="<?php echo $marketing2url?>"><button>More</button></a>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+   </div>
+  <div class="span3">
+   <img src="<?php echo $marketing3icon ?>" />
+   <?php if ($marketing3heading) { ?>
+   <h1><?php echo $marketing3heading?></h1>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+   <?php if ($marketing3subheading) { ?>
+   <h4><?php echo $marketing3subheading?></h4>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+   <?php if ($marketing3content) { ?>
+   <p><?php echo $marketing3content?></p>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+   <?php if ($marketing3url) { ?>
+   <a href="<?php echo $marketing3url?>"><button>More</button></a>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+  </div>
         
-            <div class="span3">
-        <img src="<?php echo $marketing2icon ?>" />
-        <?php if ($marketing2heading) { ?>
-        <h1><?php echo $marketing2heading?></h1>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-        <?php if ($marketing2subheading) { ?>
-        <h4><?php echo $marketing2subheading?></h4>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-        
-        <?php if ($marketing2content) { ?>
-        <p><?php echo $marketing2content?></p>
-<?php
-} else {
-?>
-<?php 
-}
-?>
-        
-        <?php if ($marketing2url) { ?>
-        <a href="<?php echo $marketing2url?>"><button>More</button></a>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-        
-        </div>
-        
-            <div class="span3">
-        <img src="<?php echo $marketing3icon ?>" />
-        <?php if ($marketing3heading) { ?>
-        <h1><?php echo $marketing3heading?></h1>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-        <?php if ($marketing3subheading) { ?>
-        <h4><?php echo $marketing3subheading?></h4>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-        
-        <?php if ($marketing3content) { ?>
-        <p><?php echo $marketing3content?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-        
-        <?php if ($marketing3url) { ?>
-        <a href="<?php echo $marketing3url?>"><button>More</button></a>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-        
-        </div>
-        
-            <div class="span3">
-<img src="<?php echo $marketing4icon ?>" />
-<?php if ($marketing4heading) { ?>
-<h1><?php echo $marketing4heading?></h1>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-<?php if ($marketing4subheading) { ?>
-<h4><?php echo $marketing4subheading?></h4>
-<?php 
-} else {
-?>
-<?php 
-}
-?>       
-<?php if ($marketing4content) { ?>
-<p><?php echo $marketing4content?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>        
-<?php if ($marketing4url) { ?>
-<a href="<?php echo $marketing4url?>"><button>More</button></a>
-<?php 
-} else {
-?>
-<?php 
-}
-?>        
-</div>
+  <div class="span3">
+   <img src="<?php echo $marketing4icon ?>" />
+   <?php if ($marketing4heading) { ?>
+   <h1><?php echo $marketing4heading?></h1>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+   <?php if ($marketing4subheading) { ?>
+   <h4><?php echo $marketing4subheading?></h4>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>       
+   <?php if ($marketing4content) { ?>
+   <p><?php echo $marketing4content?></p>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>        
+   <?php if ($marketing4url) { ?>
+   <a href="<?php echo $marketing4url?>"><button>More</button></a>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>        
+  </div>
 <div class="clearfix"></div>
-</div>
-    
+</div>    
 </div>
 <?php 
 } else {
@@ -612,139 +599,138 @@ echo $OUTPUT->doctype() ?>
 ?>  
 <?php  if ($displaymainbox) { ?>
 <div class="mainbox">
-<div class="container-fluid">
-<?php if ($mainheading) { ?>
-<h1><?php echo $mainheading?></h1>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-<?php if ($maincontent) { ?>
-<p><?php echo $maincontent?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>      
+ <div class="container-fluid">
+  <?php if ($mainheading) { ?>
+   <h1><?php echo $mainheading?></h1>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>
+   <?php if ($maincontent) { ?>
+   <p><?php echo $maincontent?></p>
+   <?php 
+   } else {
+   ?>
+   <?php 
+   }
+   ?>      
 <div class="row-fluid">
- <div class="span3">
-<img src="<?php echo $mainbox1icon ?>" />
-<?php if ($mainbox1heading) { ?>
-<h1><?php echo $mainbox1heading?></h1>
-<?php 
-} else {
-?>
-<?php 
-}
-?>       
-<?php if ($mainbox1content) { ?>
-<p><?php echo $mainbox1content?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>       
-<?php if ($mainbox1url) { ?>
-<a href="<?php echo $mainbox1url?>"><button>More</button></a>
-<?php 
-} else {
-?>
-<?php 
-}
-?>      
-</div>
+   <div class="span3">
+    <img src="<?php echo $mainbox1icon ?>" />
+    <?php if ($mainbox1heading) { ?>
+    <h1><?php echo $mainbox1heading?></h1>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>       
+    <?php if ($mainbox1content) { ?>
+    <p><?php echo $mainbox1content?></p>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>       
+    <?php if ($mainbox1url) { ?>
+    <a href="<?php echo $mainbox1url?>"><button>More</button></a>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>      
+   </div>
        
-<div class="span3">
-<img src="<?php echo $mainbox2icon ?>" />
-<?php if ($mainbox2heading) { ?>
- <h1><?php echo $mainbox2heading?></h1>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-<?php if ($mainbox2content) { ?>
-<p><?php echo $mainbox2content?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-<?php if ($mainbox2url) { ?>
-<a href="<?php echo $mainbox2url?>"><button>More</button></a>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-</div>
+   <div class="span3">
+    <img src="<?php echo $mainbox2icon ?>" />
+    <?php if ($mainbox2heading) { ?>
+    <h1><?php echo $mainbox2heading?></h1>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>
+    <?php if ($mainbox2content) { ?>
+    <p><?php echo $mainbox2content?></p>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>
+    <?php if ($mainbox2url) { ?>
+    <a href="<?php echo $mainbox2url?>"><button>More</button></a>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>
+   </div>
        
-<div class="span3">
-<img src="<?php echo $mainbox3icon ?>" />
-<?php if ($mainbox3heading) { ?>
-<h1><?php echo $mainbox3heading?></h1>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-<?php if ($mainbox3content) { ?>
-<p><?php echo $mainbox3content?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-<?php if ($mainbox3url) { ?>
-<a href="<?php echo $mainbox3url?>"><button>More</button></a>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-        
-</div>
+   <div class="span3">
+    <img src="<?php echo $mainbox3icon ?>" />
+    <?php if ($mainbox3heading) { ?>
+    <h1><?php echo $mainbox3heading?></h1>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>
+    <?php if ($mainbox3content) { ?>
+    <p><?php echo $mainbox3content?></p>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>
+    <?php if ($mainbox3url) { ?>
+    <a href="<?php echo $mainbox3url?>"><button>More</button></a>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>
+   </div>
        
        
-<div class="span3">
-<img src="<?php echo $mainbox4icon ?>" />
-<?php if ($mainbox4heading) { ?>
-<h1><?php echo $mainbox4heading?></h1>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-<?php if ($mainbox4content) { ?>
-<p><?php echo $mainbox4content?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-<?php if ($mainbox4url) { ?>
-<a href="<?php echo $mainbox4url?>">
-<button>More</button>
-</a>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-</div>
+   <div class="span3">
+    <img src="<?php echo $mainbox4icon ?>" />
+    <?php if ($mainbox4heading) { ?>
+    <h1><?php echo $mainbox4heading?></h1>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>
+    <?php if ($mainbox4content) { ?>
+    <p><?php echo $mainbox4content?></p>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>
+    <?php if ($mainbox4url) { ?>
+    <a href="<?php echo $mainbox4url?>">
+    <button>More</button>
+    </a>
+    <?php 
+    } else {
+    ?>
+    <?php 
+    }
+    ?>
+   </div>
         
         
 <div class="clearfix"></div>
@@ -777,134 +763,126 @@ echo $OUTPUT->doctype() ?>
 
 
 </div>
-        <div class="top-footer row-fluid">
+    <div class="top-footer row-fluid">
      <div class="container-fluid">
-         <div class="span6">
-         <h3><?php echo $getintouch?></h3>
-             <p><?php echo $getintouchcontent?></p>
-             
-             <ul>
+        <div class="span6">
+          <h3><?php echo $getintouch?></h3>
+           <p><?php echo $getintouchcontent?></p>
+           <ul>
              <li>
-                <?php if ($address) { ?>
-                <p><i class="icon-map-marker"></i> <?php echo $address?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-                 </li>
+               <?php if ($address) { ?>
+               <p><i class="icon-map-marker"></i> <?php echo $address?></p>
+               <?php 
+               } else {
+               ?>
+               <?php 
+               }
+               ?>
+             </li>
+                 
+            <li>
+               <?php if ($mobile) { ?>
+               <p><i class="icon-mobile-phone"></i> <?php echo $mobile?></p>
+               <?php 
+               } else {
+               ?>
+               <?php 
+               }
+               ?>
+            </li>
+                 
+            <li>
+               <?php if ($mail) { ?>
+               <p><i class="icon-envelope"></i> <?php echo $mail?></p>
+               <?php 
+               } else {
+               ?>
+               <?php 
+               }
+               ?>
+            </li>
                  
              <li>
-                 <?php if ($mobile) { ?>
-                <p><i class="icon-mobile-phone"></i> <?php echo $mobile?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-                 </li>
-                 
-             <li>
-                 <?php if ($mail) { ?>
-                <p><i class="icon-envelope"></i> <?php echo $mail?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-                 </li>
-                 
-             <li>
-                 <?php if ($phone) { ?>
-                <p><i class="icon-phone-sign"></i> <?php echo $phone?></p>
-<?php 
-} else {
-?>
-<?php 
-}
-?>
-                 </li>
-             
-             </ul>
-         </div>
-         <div class="span4">
-         <h3 class="blue"><?php echo $siteheading ?></h3>
-             <p><?php echo $sitecontent ?></p>
-         <ul class="social">
-<?php if ($hasfacebook) { ?>
-                <li>
-                    <a href="<?php echo $hasfacebook; ?>" target="_blank" />
-                    <i class="facebook">
-                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/facebook.png" alt=""/>
-                    </i>
-                    </a>
-                    </li>
-<?php 
-}
-?>
-
- 
-<?php if ($hastwitter) { ?>
-                <li>
-                    <a href="<?php echo $hastwitter; ?>" target="_blank" />
-                    <i class="twitter">
-                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/twitter.png" alt=""/>
-                    </i>
-                    </a>
-                    </li>
-<?php 
-}
-?>
-                
-<?php if ($haspintirest) { ?>
-                <li>
-                    <a href="<?php echo $haspintirest; ?>" target="_blank" />
-                    <i class="pintirest">
-                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/pintirest.png" 
+               <?php if ($phone) { ?>
+               <p><i class="icon-phone-sign"></i> <?php echo $phone?></p>
+               <?php 
+               } else {
+               ?>
+               <?php 
+               }
+               ?>
+            </li>
+        </ul>
+        </div>
+        <div class="span4">
+          <h3 class="blue"><?php echo $siteheading ?></h3>
+          <p><?php echo $sitecontent ?></p>
+        <ul class="social">
+           <?php if ($hasfacebook) { ?>
+           <li>
+            <a href="<?php echo $hasfacebook; ?>" target="_blank" />
+            <i class="facebook">
+             <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/facebook.png" alt=""/>
+            </i>
+            </a>
+           </li>
+            <?php 
+            }
+            ?>
+          <?php if ($hastwitter) { ?>
+           <li>
+            <a href="<?php echo $hastwitter; ?>" target="_blank" />
+             <i class="twitter">
+              <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/twitter.png" alt=""/>
+            </i>
+            </a>
+           </li>
+            <?php 
+            }
+            ?>
+         <?php if ($haspintirest) { ?>
+           <li>
+            <a href="<?php echo $haspintirest; ?>" target="_blank" />
+            <i class="pintirest">
+             <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/pintirest.png" 
                          alt=""/>                       
-                    </i>
-                    </a>
-                    </li>
-<?php 
-}
-?>
-
-  <?php if ($hasgoogleplus) { ?>
-                <li>
-                    <a href="<?php echo $hasgoogleplus; ?>" target="_blank" />
-                    <i class="googleplus">
-                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/googleplus.png" 
+            </i>
+            </a>
+          </li>
+            <?php 
+            }
+            ?>
+        <?php if ($hasgoogleplus) { ?>
+           <li>
+            <a href="<?php echo $hasgoogleplus; ?>" target="_blank" />
+            <i class="googleplus">
+             <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/googleplus.png" 
                          alt=""/>                       
-                    </i>
-                    </a>
-                    </li>
-<?php 
-}
-?>
+            </i>
+            </a>
+           </li>
+            <?php 
+            }
+            ?>
+         <?php if ($haslinkdin) { ?>
+           <li>
+            <a href="<?php echo $haslinkdin; ?>" target="_blank" />
+            <i class="linkdin">
+             <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/linkdin.png" alt=""/>
+            </i>
+            </a>
+           </li>
+            <?php 
+            }
+            ?>
+        </ul>
+        </div>
+        <div class="clearfix"></div>
 
-<?php if ($haslinkdin) { ?>
-                <li>
-                    <a href="<?php echo $haslinkdin; ?>" target="_blank" />
-                    <i class="linkdin">
-                    <img src="<?php echo $CFG->wwwroot;?>/theme/eduhub/pix/social/linkdin.png" alt=""/>
-                    </i>
-                    </a>
-                    </li>
-<?php 
-}
-?>
- 
- 
-  </ul>
-         </div>
-         <div class="clearfix"></div>
     <div class="ftr-copyright">
-	 <?php if ($hascopyright) {
+        <?php if ($hascopyright) {
         echo '<p class="copy">Copyright &copy; '.date("Y").' '.$hascopyright.'</p>';
-} ?>
+        } ?>
      </div>
         </div>
     </div>
