@@ -70,7 +70,7 @@ $string['pluginname'] = 'Eduhub';
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 
-$string['sitecolor'] = 'Site background color';
+$string['sitecolor'] = 'Site Color';
 $string['sitecolordesc'] = 'This allow you to set the Theme Color';
 
 $string['bannerheading'] = 'Banner Heading';
