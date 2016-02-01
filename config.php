@@ -38,7 +38,7 @@ $THEME->name = 'eduhub';
 //
 $THEME->doctype = 'html5';
 $THEME->parents = array('clean', 'bootstrapbase');
-$THEME->sheets = array('custom', 'font-awesome', 'font-awesome.min', 'font-awesome-ie7', 'font-awesome-ie7.min');
+$THEME->sheets = array('custom', 'font-awesome');
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
 $THEME->enable_dock = true;
@@ -54,5 +54,6 @@ $THEME->layouts = array(
 );
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->csspostprocess = 'theme_eduhub_process_css';
-$THEME->javascripts_footer = array();
-$THEME->javascripts = array('jquery-1.11.2.min', 'jquery.min');
+$THEME->javascripts = array('jquery-1.11.2.min','classie', 'modernizr.custom', 'uisearch');
+
+

@@ -231,9 +231,6 @@ echo $OUTPUT->doctype() ?>
                <?php if ($address) { ?>
                <p><i class="icon-map-marker"></i> <?php echo $address?></p>
                <?php 
-               } else {
-               ?>
-               <?php 
                }
                ?>
              </li>
@@ -242,10 +239,7 @@ echo $OUTPUT->doctype() ?>
                <?php if ($mobile) { ?>
                <p><i class="icon-mobile-phone"></i> <?php echo $mobile?></p>
                <?php 
-               } else {
-               ?>
-               <?php 
-               }
+               } 
                ?>
             </li>
                  
@@ -253,19 +247,13 @@ echo $OUTPUT->doctype() ?>
                <?php if ($mail) { ?>
                <p><i class="icon-envelope"></i> <?php echo $mail?></p>
                <?php 
-               } else {
-               ?>
-               <?php 
-               }
+               } 
                ?>
             </li>
                  
              <li>
                <?php if ($phone) { ?>
                <p><i class="icon-phone-sign"></i> <?php echo $phone?></p>
-               <?php 
-               } else {
-               ?>
                <?php 
                }
                ?>
