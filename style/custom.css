@@ -1186,3 +1186,7 @@ a,#dockeditempanel .dockeditempanel_hd h2,
 .navbar-inner{
   border-color: [[setting:sitecolor]] !important;
 }
+
+body.pagelayout-frontpage #page-header h1 span,
+body.pagelayout-frontpage #page-header h1,
+body.pagelayout-frontpage #page-header p{color:[[setting:bannerfontcolor]];}

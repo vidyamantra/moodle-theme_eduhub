@@ -61,6 +61,16 @@ function theme_eduhub_process_css($css, $theme) {
         $sitecolor = $theme->settings->sitecolor;
     }
     $css = eduhub_set_sitecolor($css, $sitecolor);
+    
+    // Set the Banner Font Color.
+    if (empty($theme->settings->bannerfontcolor)) {
+        $bannerfontcolor = '#fff'; // Default.
+    } else {
+        $bannerfontcolor = $theme->settings->bannerfontcolor;
+    }
+    $css = eduhub_set_bannerfontcolor($css, $bannerfontcolor);
+    
+    
     // Set custom CSS.
     if (!empty($theme->settings->customcss)) {
         $customcss = $theme->settings->customcss;
@@ -90,6 +100,11 @@ function theme_eduhub_set_logo($css, $logo) {
 function eduhub_set_sitecolor($css, $sitecolor) {
     $tag = '[[setting:sitecolor]]';
     $css = str_replace($tag, $sitecolor, $css);
+    return $css;
+}
+function eduhub_set_bannerfontcolor($css, $bannerfontcolor) {
+    $tag = '[[setting:bannerfontcolor]]';
+    $css = str_replace($tag, $bannerfontcolor, $css);
     return $css;
 }
 function theme_eduhub_set_headerimg($css, $headerimg) {

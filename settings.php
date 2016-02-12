@@ -103,6 +103,15 @@ $setting = new admin_setting_configtextarea($name, $title, $description, $defaul
 $setting->set_updatedcallback('theme_reset_all_caches');
 $temp->add($setting);
 
+// Banner Font color.
+$name = 'theme_eduhub/bannerfontcolor';
+$title = get_string('bannerfontcolor', 'theme_eduhub');
+$description = get_string('bannerfontcolordesc', 'theme_eduhub');
+$default = '#ffffff';
+$setting = new admin_setting_configcolourpicker($name, $title, $description, $default);
+$temp->add($setting);
+
+
 // Read-me.
 $readme = new moodle_url('/theme/eduhub/README.txt');
 $readme = html_writer::link($readme, get_string('readme_click', 'theme_eduhub'), array('target' => '_blank'));

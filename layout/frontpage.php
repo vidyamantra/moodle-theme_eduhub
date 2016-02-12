@@ -903,14 +903,7 @@ if (!empty($PAGE->theme->settings->backtotop)) {
 </div>
 
 <script type="text/javascript">
-    $(function(){
-$('h1.new').each(function(){
-    var text = $(this).text().split(' ');
-    if(text.length < 2)
-        return;
-    text[0] = '<span class="coursenam-white">'+text[0]+'</span>';
-    $(this).html( text.join(' ') );
-});      
+    $(function(){      
 $('h3.blue').each(function(){
     var text = $(this).text().split(' ');
     if(text.length < 2)

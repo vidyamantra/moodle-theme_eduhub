@@ -77,6 +77,8 @@ $string['bannerheading'] = 'Banner Heading';
 $string['bannerheadingdesc'] = 'Enter Banner Heading Text';
 $string['bannercontent'] = 'Banner Content';
 $string['bannercontentdesc'] = 'Enter Banner Content Text';
+$string['bannerfontcolor'] = 'Banner Font Color';
+$string['bannerfontcolordesc'] = 'This allow you to set the Banner Font Color';
 
 $string['marketing1icon'] = 'Marketing1 Icon';
 $string['marketing1icondesc'] = 'Upload Marketing1 Icon';
