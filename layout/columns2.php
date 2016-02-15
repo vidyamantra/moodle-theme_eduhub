@@ -358,12 +358,12 @@ echo $OUTPUT->doctype() ?>
       </div>
     </footer>
 
-    <?php echo $OUTPUT->standard_end_of_body_html();
+        <?php echo $OUTPUT->standard_end_of_body_html();
 // Code for back to top.
 if (!empty($PAGE->theme->settings->backtotop)) {
 ?>
 <div id="back-to-top" style="display: none;"> 
-    <a class="arrow" href="#" title="<?php echo get_string('backtotop', 'theme_eduhub')?>">&nbsp;</a> 
+    <a class="arrow" href="#" title="<?php echo get_string('backtotop', 'theme_eduhub')?>"><i class="icon-circle-arrow-up"></i></a> 
 </div>
 <?php 
 }

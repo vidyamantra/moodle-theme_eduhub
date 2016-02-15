@@ -463,6 +463,7 @@ table.wrapper tr td span.tst-wrap{display: block;}
   line-height: 2em;
 }
 .frontpage-course-list-all .coursebox{
+    background-color: #fff;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
