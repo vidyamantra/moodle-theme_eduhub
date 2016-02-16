@@ -238,7 +238,7 @@ echo $OUTPUT->doctype() ?>
            <ul>
              <li>
                <?php if ($address) { ?>
-               <p><i class="icon-map-marker"></i> <?php echo $address?></p>
+               <p><i class="fa fa-map-marker"></i> <?php echo $address?></p>
                <?php 
                }
                ?>
@@ -246,7 +246,7 @@ echo $OUTPUT->doctype() ?>
                  
             <li>
                <?php if ($mobile) { ?>
-               <p><i class="icon-mobile-phone"></i> <?php echo $mobile?></p>
+               <p><i class="fa fa-mobile-phone"></i> <?php echo $mobile?></p>
                <?php 
                } 
                ?>
@@ -254,7 +254,7 @@ echo $OUTPUT->doctype() ?>
                  
             <li>
                <?php if ($mail) { ?>
-               <p><i class="icon-envelope"></i> <?php echo $mail?></p>
+               <p><i class="fa fa-envelope"></i> <?php echo $mail?></p>
                <?php 
                } 
                ?>
@@ -262,7 +262,7 @@ echo $OUTPUT->doctype() ?>
                  
              <li>
                <?php if ($phone) { ?>
-               <p><i class="icon-phone-sign"></i> <?php echo $phone?></p>
+               <p><i class="fa fa-phone"></i> <?php echo $phone?></p>
                <?php 
                }
                ?>
