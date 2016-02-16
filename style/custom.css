@@ -555,6 +555,12 @@ table.wrapper tr td span.tst-wrap{display: block;}
   width: 40%;
   margin-right: 20px;
 }
+.category-browse .coursebox .content .imagebox{
+  width: 40%;
+}
+.category-browse .coursebox .content .imagebox img{
+  margin-right: 15px;
+}
 /* Forum CSS
 -------------------------*/
 #site-news-forum{
