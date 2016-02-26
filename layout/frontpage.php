@@ -913,7 +913,8 @@ $('h3.blue').each(function(){
 });        
    });
     
-$( "div#frontpage-course-list > h2" ).addClass( "all" );
+//$( "div#frontpage-course-list > h2" ).addClass( "all" );
+$("div.frontpage-course-list-all").prev().addClass( "all" );    
 var elements = document.getElementsByClassName('all');
 for(var i=0; i<elements.length; i++){
     if(elements[i].innerHTML == 'Available courses'){
