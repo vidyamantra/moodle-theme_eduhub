@@ -353,7 +353,7 @@ echo $OUTPUT->doctype() ?>
 if (!empty($PAGE->theme->settings->backtotop)) {
 ?>
 <div id="back-to-top" style="display: none;"> 
-    <a class="arrow" href="#" title="<?php echo get_string('backtotop', 'theme_eduhub')?>"><i class="icon-circle-arrow-up"></i></a> 
+    <a class="arrow" href="#" title="<?php echo get_string('backtotop', 'theme_eduhub')?>"><i class="fa fa-arrow-up"></i></a> 
 </div>
 <?php 
 }

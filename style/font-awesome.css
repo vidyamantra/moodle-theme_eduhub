@@ -467,6 +467,7 @@
 }
 .fa-arrow-up:before {
   content: "\f062";
+  font-size: 2em;
 }
 .fa-arrow-down:before {
   content: "\f063";
