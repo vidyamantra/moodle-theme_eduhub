@@ -44,6 +44,22 @@ $string['choosereadme'] = '
 <p>
 <a href="http://www.gnu.org/licenses/gpl-3.0.txt">http://www.gnu.org/licenses/gpl-3.0.txt</a>
 </p>
+<h2>Customisation</h2>
+<p>
+Here is the converted version,</p>
+<p>
+If you like this theme and want to more advance customization, we will do this for you. You can also get all the features from this theme to your new theme. We make great new theme from scratch, all the services we offer in competitive rates.
+</p>
+<p>
+<h3>Please contact us by any mail address from below,</h3>
+
+<a target="-blank" href="https://www.themecaters.com/contact">https://www.themecaters.com/contact</a>
+<br/>
+<a href="mailto:support@vidyamantra.com">support@vidyamantra.com</a>
+<br/>
+<a href="mailto:sales@vidyamantra.com">sales@vidyamantra.com</a>
+<br/>
+</p>
 </div>
 </div>';
 

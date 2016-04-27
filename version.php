@@ -30,8 +30,8 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2016032800;  // The current module version (Date: YYYYMMDDXX).
-$plugin->release = '1.2 (Build: 2016032800)';
+$plugin->version   = 2016042700;  // The current module version (Date: YYYYMMDDXX).
+$plugin->release = '1.2 (Build: 2016042700)';
 $plugin->requires  = 2015111000; 
 $plugin->component = 'theme_eduhub';
 $plugin->maturity = MATURITY_STABLE;
