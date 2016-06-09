@@ -333,13 +333,11 @@ body.pagelayout-frontpage #page-content{
 .no-js .sb-search .sb-search-submit {
   z-index: 90;
 }
-/*
 .column {
   float: right;
   padding-right: 0;
   position: relative;
 }
-*/
 /* Marketing Box
 ----------------------------*/
 .marketingbox{
@@ -565,38 +563,6 @@ table.wrapper tr td span.tst-wrap{display: block;}
 }
 .category-browse .coursebox .content .imagebox img{
   margin-right: 15px;
-}
-.course_category_tree .category > .info {box-shadow: none;}
-.course_category_tree .category > .info h3 {font-size: 1.2em;}
-.course_category_tree .category > .info > .categoryname {
-    background-position: left 8px center;
-    border: 1px solid #ddd; 
-    border-radius: 2px;
-    padding: 0 20px 0 32px;
-    margin: 3px 0;
-}
-.course_category_tree .category .numberofcourse {font-size: 0.86em;}
-.course_category_tree .category > .info > .categoryname a {
-    border-left: 1px solid #ddd;
-    padding: 10px 0px 11px 13px;
-}
-.course_category_tree .category > .content h4 {font-size: 1.08em;}
-.course_category_tree .category > .content h4.categoryname {
-    padding: 9px 20px 9px 32px; 
-}
-.course_category_tree .category > .content h4.categoryname a {
-    border-left: 1px solid #ddd;
-    padding: 10px 12px;
-    color: #888;
-}
-.course_category_tree .category > .info {background: transparent none; border-width: 0;}
-#frontpage-category-names .course_category_tree .category > .info > .categoryname {padding-left: 35px;}
-.course_category_tree .courses > .paging.paging-morelink:hover {background: transparent none;}
-.course-content ul li.section.main{
-  padding-bottom: 20px;
-}
-.coursebox > .info > .coursename{
-  margin: 5px 0;
 }
 /* Forum CSS
 -------------------------*/

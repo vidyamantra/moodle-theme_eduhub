@@ -37,8 +37,8 @@ $string['choosereadme'] = '
 <a href="mailto:support@vidyamantra.com">support@vidyamantra.com</a>
 </p>
 <h2>About</h2>
-<p>This theme is specially made for Course (education) Training. It is based on Bootstrap of moodle 3.0</p>
-<h2>Credits</h2><p>This theme was designed for moodle 3.0 by Vidya Mantra EduSystems Pvt. Ltd.
+<p>This theme is specially made for Course (Education) Training. It is based on Bootstrap framework.</p>
+<h2>Credits</h2><p>This theme was designed for moodle by Vidya Mantra EduSystems Pvt. Ltd.
 </p>
 <h2>License</h2>
 <p>
