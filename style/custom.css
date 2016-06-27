@@ -1171,11 +1171,10 @@ div#region-main-box,section#region-main{
 }
 
 
-
-
-
-
-
+@media (max-width:680px) {	
+	body.pagelayout-frontpage #page-header {min-height: 140px;}
+	body.pagelayout-frontpage #page-header {background-size: cover;}
+}
 
 
 
