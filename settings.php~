@@ -162,7 +162,7 @@ $name = 'theme_eduhub/marketing1content';
 $title = get_string('marketing1content', 'theme_eduhub');
 $description = get_string('marketing1contentdesc', 'theme_eduhub');
 $default = 'Contrary to popular belief, Lorem Ipsum is not simply ...';
-$setting = new admin_setting_configtextarea($name, $title, $description, $default);
+$setting = new admin_setting_confightmleditor($name, $title, $description, $default);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $temp->add($setting);
 

@@ -35,43 +35,48 @@ if (right_to_left()) {
 }
 /* Footer
 -----------------*/
+if (!empty($PAGE->theme->settings->copyright)) {
+    $hascopyright = theme_eduhub_get_setting('copyright',true);
+} else {
+    $hascopyright = '';
+}
 if (!empty($PAGE->theme->settings->getintouch)) {
-    $getintouch = $PAGE->theme->settings->getintouch;
+    $getintouch = theme_eduhub_get_setting('getintouch',true);
 } else {
     $getintouch = '';
 }
 if (!empty($PAGE->theme->settings->getintouchcontent)) {
-    $getintouchcontent = $PAGE->theme->settings->getintouchcontent;
+    $getintouchcontent = theme_eduhub_get_setting('getintouchcontent',true);
 } else {
     $getintouchcontent = '';
 }
 if (!empty($PAGE->theme->settings->address)) {
-    $address = $PAGE->theme->settings->address;
+    $address = theme_eduhub_get_setting('address',true);
 } else {
     $address = '';
 }
 if (!empty($PAGE->theme->settings->mobile)) {
-    $mobile = $PAGE->theme->settings->mobile;
+    $mobile = theme_eduhub_get_setting('mobile',true);
 } else {
     $mobile = '';
 }
 if (!empty($PAGE->theme->settings->mail)) {
-    $mail = $PAGE->theme->settings->mail;
+    $mail = theme_eduhub_get_setting('mail',true);
 } else {
     $mail = '';
 }
 if (!empty($PAGE->theme->settings->phone)) {
-    $phone = $PAGE->theme->settings->phone;
+    $phone = theme_eduhub_get_setting('phone',true);
 } else {
     $phone = '';
 }
 if (!empty($PAGE->theme->settings->siteheading)) {
-    $siteheading = $PAGE->theme->settings->siteheading;
+    $siteheading = theme_eduhub_get_setting('siteheading',true);
 } else {
     $siteheading = '';
 }
 if (!empty($PAGE->theme->settings->sitecontent)) {
-    $sitecontent = $PAGE->theme->settings->sitecontent;
+    $sitecontent = theme_eduhub_get_setting('sitecontent',true);
 } else {
     $sitecontent = '';
 }

@@ -29,6 +29,7 @@
  */
 
 // Get the HTML for the settings bits.
+
 $html = theme_eduhub_get_html_for_settings($OUTPUT, $PAGE);
 
 // Set default (LTR) layout mark-up for a three column page.
@@ -43,23 +44,19 @@ if (right_to_left()) {
     $sidepre = 'span4 pull-right';
     $sidepost = 'span3 desktop-first-column';
 }
-if (!empty($PAGE->theme->settings->copyright)) {
-    $hascopyright = $PAGE->theme->settings->copyright;
-} else {
-    $hascopyright = '';
-}
+
 if (!empty($PAGE->theme->settings->logo)) {
     $logourl = $PAGE->theme->setting_file_url('logo', 'logo');
 } else {
     $logourl = $OUTPUT->pix_url('/logo', 'theme');
 }
 if (!empty($PAGE->theme->settings->bannerheading)) {
-    $bannerheading = $PAGE->theme->settings->bannerheading;
+    $bannerheading = theme_eduhub_get_setting('bannerheading',true);
 } else {
     $bannerheading = '';
 }
 if (!empty($PAGE->theme->settings->bannercontent)) {
-    $bannercontent = $PAGE->theme->settings->bannercontent;
+    $bannercontent = theme_eduhub_get_setting('bannercontent',true);
 } else {
     $bannercontent = '';
 }
@@ -70,17 +67,17 @@ if (!empty($PAGE->theme->settings->marketing1icon)) {
 }
 
 if (!empty($PAGE->theme->settings->marketing1heading)) {
-    $marketing1heading = $PAGE->theme->settings->marketing1heading;
+    $marketing1heading = theme_eduhub_get_setting('marketing1heading',true);
 } else {
     $marketing1heading = '';
 }
 if (!empty($PAGE->theme->settings->marketing1subheading)) {
-    $marketing1subheading = $PAGE->theme->settings->marketing1subheading;
+    $marketing1subheading = theme_eduhub_get_setting('marketing1subheading',true);
 } else {
     $marketing1subheading = '';
 }
 if (!empty($PAGE->theme->settings->marketing1content)) {
-    $marketing1content = $PAGE->theme->settings->marketing1content;
+    $marketing1content = theme_eduhub_get_setting('marketing1content',true);
 } else {
     $marketing1content = '';
 }
@@ -95,17 +92,17 @@ if (!empty($PAGE->theme->settings->marketing2icon)) {
     $marketing2icon = $OUTPUT->pix_url('icon2', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing2heading)) {
-    $marketing2heading = $PAGE->theme->settings->marketing2heading;
+    $marketing2heading = theme_eduhub_get_setting('marketing2heading',true);
 } else {
     $marketing2heading = '';
 }
 if (!empty($PAGE->theme->settings->marketing2subheading)) {
-    $marketing2subheading = $PAGE->theme->settings->marketing2subheading;
+    $marketing2subheading = theme_eduhub_get_setting('marketing2subheading',true);
 } else {
     $marketing2subheading = '';
 }
 if (!empty($PAGE->theme->settings->marketing2content)) {
-    $marketing2content = $PAGE->theme->settings->marketing2content;
+    $marketing2content = theme_eduhub_get_setting('marketing2content',true);
 } else {
     $marketing2content = '';
 }
@@ -120,17 +117,17 @@ if (!empty($PAGE->theme->settings->marketing3icon)) {
     $marketing3icon = $OUTPUT->pix_url('icon3', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing3heading)) {
-    $marketing3heading = $PAGE->theme->settings->marketing3heading;
+    $marketing3heading = theme_eduhub_get_setting('marketing3heading',true);
 } else {
     $marketing3heading = '';
 }
 if (!empty($PAGE->theme->settings->marketing3subheading)) {
-    $marketing3subheading = $PAGE->theme->settings->marketing3subheading;
+    $marketing3subheading = theme_eduhub_get_setting('marketing3subheading',true);
 } else {
     $marketing3subheading = '';
 }
 if (!empty($PAGE->theme->settings->marketing3content)) {
-    $marketing3content = $PAGE->theme->settings->marketing3content;
+    $marketing3content = theme_eduhub_get_setting('marketing3content',true);
 } else {
     $marketing3content = '';
 }
@@ -145,17 +142,17 @@ if (!empty($PAGE->theme->settings->marketing4icon)) {
     $marketing4icon = $OUTPUT->pix_url('icon4', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing4heading)) {
-    $marketing4heading = $PAGE->theme->settings->marketing4heading;
+    $marketing4heading = theme_eduhub_get_setting('marketing4heading',true);
 } else {
     $marketing4heading = '';
 }
 if (!empty($PAGE->theme->settings->marketing4subheading)) {
-    $marketing4subheading = $PAGE->theme->settings->marketing4subheading;
+    $marketing4subheading = theme_eduhub_get_setting('marketing4subheading',true);
 } else {
     $marketing4subheading = '';
 }
 if (!empty($PAGE->theme->settings->marketing4content)) {
-    $marketing4content = $PAGE->theme->settings->marketing4content;
+    $marketing4content = theme_eduhub_get_setting('marketing4content',true);
 } else {
     $marketing4content = '';
 }
@@ -171,13 +168,13 @@ if (!empty($PAGE->theme->settings->mainbox1icon)) {
     $mainbox1icon = $OUTPUT->pix_url('icon5', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox1heading)) {
-    $mainbox1heading = $PAGE->theme->settings->mainbox1heading;
+    $mainbox1heading = theme_eduhub_get_setting('mainbox1heading',true);
 } else {
     $mainbox1heading = '';
 }
 
 if (!empty($PAGE->theme->settings->mainbox1content)) {
-    $mainbox1content = $PAGE->theme->settings->mainbox1content;
+    $mainbox1content = theme_eduhub_get_setting('mainbox1content',true);
 } else {
     $mainbox1content = '';
 }
@@ -192,12 +189,12 @@ if (!empty($PAGE->theme->settings->mainbox2icon)) {
     $mainbox2icon = $OUTPUT->pix_url('icon6', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox2heading)) {
-    $mainbox2heading = $PAGE->theme->settings->mainbox2heading;
+    $mainbox2heading = theme_eduhub_get_setting('mainbox2heading',true);
 } else {
     $mainbox2heading = '';
 }
 if (!empty($PAGE->theme->settings->mainbox2content)) {
-    $mainbox2content = $PAGE->theme->settings->mainbox2content;
+    $mainbox2content = theme_eduhub_get_setting('mainbox2content',true);
 } else {
     $mainbox2content = '';
 }
@@ -212,12 +209,12 @@ if (!empty($PAGE->theme->settings->mainbox3icon)) {
     $mainbox3icon = $OUTPUT->pix_url('icon7', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox3heading)) {
-    $mainbox3heading = $PAGE->theme->settings->mainbox3heading;
+    $mainbox3heading = theme_eduhub_get_setting('mainbox3heading',true);
 } else {
     $mainbox3heading = '';
 }
 if (!empty($PAGE->theme->settings->mainbox3content)) {
-    $mainbox3content = $PAGE->theme->settings->mainbox3content;
+    $mainbox3content = theme_eduhub_get_setting('mainbox3content',true);
 } else {
     $mainbox3content = '';
 }
@@ -232,12 +229,12 @@ if (!empty($PAGE->theme->settings->mainbox4icon)) {
     $mainbox4icon = $OUTPUT->pix_url('icon8', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox4heading)) {
-    $mainbox4heading = $PAGE->theme->settings->mainbox4heading;
+    $mainbox4heading = theme_eduhub_get_setting('mainbox4heading',true);
 } else {
     $mainbox4heading = '';
 }
 if (!empty($PAGE->theme->settings->mainbox4content)) {
-    $mainbox4content = $PAGE->theme->settings->mainbox4content;
+    $mainbox4content = theme_eduhub_get_setting('mainbox4content',true);
 } else {
     $mainbox4content = '';
 }
@@ -247,54 +244,59 @@ if (!empty($PAGE->theme->settings->mainbox4url)) {
     $mainbox4url = '';
 }
 if (!empty($PAGE->theme->settings->mainheading)) {
-    $mainheading = $PAGE->theme->settings->mainheading;
+    $mainheading = theme_eduhub_get_setting('mainheading',true);
 } else {
     $mainheading = '';
 }
 if (!empty($PAGE->theme->settings->maincontent)) {
-    $maincontent = $PAGE->theme->settings->maincontent;
+    $maincontent = theme_eduhub_get_setting('maincontent',true);
 } else {
     $maincontent = '';
 }
 /* Footer
 -----------------*/
+if (!empty($PAGE->theme->settings->copyright)) {
+    $hascopyright = theme_eduhub_get_setting('copyright',true);
+} else {
+    $hascopyright = '';
+}
 if (!empty($PAGE->theme->settings->getintouch)) {
-    $getintouch = $PAGE->theme->settings->getintouch;
+    $getintouch = theme_eduhub_get_setting('getintouch',true);
 } else {
     $getintouch = '';
 }
 if (!empty($PAGE->theme->settings->getintouchcontent)) {
-    $getintouchcontent = $PAGE->theme->settings->getintouchcontent;
+    $getintouchcontent = theme_eduhub_get_setting('getintouchcontent',true);
 } else {
     $getintouchcontent = '';
 }
 if (!empty($PAGE->theme->settings->address)) {
-    $address = $PAGE->theme->settings->address;
+    $address = theme_eduhub_get_setting('address',true);
 } else {
     $address = '';
 }
 if (!empty($PAGE->theme->settings->mobile)) {
-    $mobile = $PAGE->theme->settings->mobile;
+    $mobile = theme_eduhub_get_setting('mobile',true);
 } else {
     $mobile = '';
 }
 if (!empty($PAGE->theme->settings->mail)) {
-    $mail = $PAGE->theme->settings->mail;
+    $mail = theme_eduhub_get_setting('mail',true);
 } else {
     $mail = '';
 }
 if (!empty($PAGE->theme->settings->phone)) {
-    $phone = $PAGE->theme->settings->phone;
+    $phone = theme_eduhub_get_setting('phone',true);
 } else {
     $phone = '';
 }
 if (!empty($PAGE->theme->settings->siteheading)) {
-    $siteheading = $PAGE->theme->settings->siteheading;
+    $siteheading = theme_eduhub_get_setting('siteheading',true);
 } else {
     $siteheading = '';
 }
 if (!empty($PAGE->theme->settings->sitecontent)) {
-    $sitecontent = $PAGE->theme->settings->sitecontent;
+    $sitecontent = theme_eduhub_get_setting('sitecontent',true);
 } else {
     $sitecontent = '';
 }
@@ -881,10 +883,11 @@ echo $OUTPUT->doctype() ?>
         <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
         <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
         <?php
-        echo $html->footnote;
-        echo $OUTPUT->login_info();
 
-        echo $OUTPUT->standard_footer_html();
+           echo $html->footnote;
+           echo $OUTPUT->login_info();
+
+           echo $OUTPUT->standard_footer_html();
         ?>
              <div>developed by <a href="http://www.themecaters.com/" style="color: #3e65a0;">themecaters.com</a></div>
       </div>
