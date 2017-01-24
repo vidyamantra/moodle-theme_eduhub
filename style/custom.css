@@ -61,7 +61,7 @@ a:hover, a:focus{
 }
 body.pagelayout-frontpage{padding-top: 0;}
 body{
-  background-color: #f8f8f8 ;
+  background-color: #f8f8f8;
   background-image: url([[setting:footerimg]]);
   background-repeat: repeat-x;
   background-position: center bottom;
@@ -69,6 +69,7 @@ body{
   font-size: 1em;
   line-height: 1.5em;
   color:#727272;
+ padding-top: 130px;    
 }
 body.pagelayout-frontpage #page-header{
   background-image: url([[setting:headerimg]]);
@@ -77,7 +78,7 @@ body.pagelayout-frontpage #page-header{
   background-color: #ccc;
   background-size: 100%;
   min-height: 540px;
-  padding-top: 60px;
+  padding-top: 60px;    
 }
 body.pagelayout-frontpage #page-header .container-fluid{
   margin-top: 8%;
@@ -111,7 +112,6 @@ body.pagelayout-frontpage #page-content{
   background-color: #eee;
   font-size: 14px;
   margin-bottom: 20px;
-  margin-top: 30px;
 }
 .singlebutton div{
   margin: 5px !important;
@@ -156,6 +156,9 @@ body.pagelayout-frontpage #page-content{
   border-top: 3px solid #3e65a0 !important;
   border-radius: 0;
   box-shadow: none;
+}
+.top-header {
+    background-color: #3e65a0;
 }
 .navbar .nav{
   float: right;
@@ -220,7 +223,7 @@ body.pagelayout-frontpage #page-content{
   background-position: left top;
 }
 .usermenu .login a{
-  color: #3e65a0;
+  color: #333;
 }
 .usermenu .login a:hover, .usermenu .login a:focus{
   text-decoration: none;
@@ -1009,6 +1012,33 @@ body#page-login-index section{
 #notice .singlebutton + .singlebutton input, .submit.buttons input[name="cancel"]{
   border-radius: 0;
 }
+/* New Add CSS
+------------------*/
+.navbar .popover-region-toggle img{
+    width: 24px;
+    height: 24px;
+}
+.navbar .popover-region-toggle{
+    padding: 11px 10px;
+}
+.navbar .popover-region-container{
+    top: 64px;
+}
+.popover-region-header-container{
+    background-color: #eee;
+}
+.popover-region-header-container h3{
+    font-weight: normal;
+    color: #333;
+}
+
+
+
+
+
+
+
+
 /* For mobile
 -----------------------*/
 @media only screen and (min-width:969px) and (max-width:1117px) {
@@ -1186,11 +1216,11 @@ div#region-main-box,section#region-main{
 .sb-icon-search,.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover,
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a,
 .mainbox .span3 button,.mainbox .span3 button:hover,.frontpage-course-list-all .coursebox .info h3.coursename,#site-news-forum h2,button, input.form-submit, input[type="button"], input[type="submit"], input[type="reset"],button:hover, input.form-submit:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover,.block_calendar_month .calendar-controls .previous,.block_calendar_month .calendar-controls .next,.block .minicalendar td.today, .block .minicalendar td.today a,.path-calendar .maincalendar .calendar-controls .previous, .path-calendar .maincalendar .calendar-controls .next,.moodle-actionmenu.show[data-enhanced] .menu a:hover,.navbar .btn-navbar,.navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled],.sb-search.sb-search-open .sb-icon-search, .no-js .sb-search .sb-icon-search,
-input.form-submit:hover, input#id_submitbutton:hover, input#id_submitbutton2:hover, .path-admin .buttons input[type="submit"]:hover, td.submit input:hover, input.form-submit:focus, input#id_submitbutton:focus, input#id_submitbutton2:focus, .path-admin .buttons input[type="submit"]:focus, td.submit input:focus, input.form-submit:active, input#id_submitbutton:active, input#id_submitbutton2:active, .path-admin .buttons input[type="submit"]:active, td.submit input:active, input.form-submit.active, input#id_submitbutton.active, input#id_submitbutton2.active, .path-admin .buttons input.active[type="submit"], td.submit input.active, input.form-submit.disabled, input#id_submitbutton.disabled, input#id_submitbutton2.disabled, .path-admin .buttons input.disabled[type="submit"], td.submit input.disabled, input.form-submit[disabled], input#id_submitbutton[disabled], input#id_submitbutton2[disabled], .path-admin .buttons input[type="submit"][disabled], td.submit input[disabled],input.form-submit, input#id_submitbutton, input#id_submitbutton2, .path-admin .buttons input[type="submit"], td.submit input,.btn-primary,.btn-primary:hover,.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover{
+input.form-submit:hover, input#id_submitbutton:hover, input#id_submitbutton2:hover, .path-admin .buttons input[type="submit"]:hover, td.submit input:hover, input.form-submit:focus, input#id_submitbutton:focus, input#id_submitbutton2:focus, .path-admin .buttons input[type="submit"]:focus, td.submit input:focus, input.form-submit:active, input#id_submitbutton:active, input#id_submitbutton2:active, .path-admin .buttons input[type="submit"]:active, td.submit input:active, input.form-submit.active, input#id_submitbutton.active, input#id_submitbutton2.active, .path-admin .buttons input.active[type="submit"], td.submit input.active, input.form-submit.disabled, input#id_submitbutton.disabled, input#id_submitbutton2.disabled, .path-admin .buttons input.disabled[type="submit"], td.submit input.disabled, input.form-submit[disabled], input#id_submitbutton[disabled], input#id_submitbutton2[disabled], .path-admin .buttons input[type="submit"][disabled], td.submit input[disabled],input.form-submit, input#id_submitbutton, input#id_submitbutton2, .path-admin .buttons input[type="submit"], td.submit input,.btn-primary,.btn-primary:hover,.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover,.top-header{
   background-color: [[setting:sitecolor]];
 }
 a,#dockeditempanel .dockeditempanel_hd h2,
-.forumpost .subject,.forumpost .options,.top-footer .span4 h3,.block .header h2,.sitetopic p.blue,.path-calendar .maincalendar .calendar-controls .current,.calendar_event_course, .block .calendar-event-panel .yui3-overlay-content,.block .content h3.eventskey,.usermenu .login a{
+.forumpost .subject,.forumpost .options,.top-footer .span4 h3,.block .header h2,.sitetopic p.blue,.path-calendar .maincalendar .calendar-controls .current,.calendar_event_course, .block .calendar-event-panel .yui3-overlay-content,.block .content h3.eventskey{
   color: [[setting:sitecolor]];
 }
 .navbar-inner{
