@@ -1,6 +1,6 @@
 About Eduhub
 --------------------
-Eduhub is a free theme for moodle 3.2
+Eduhub is a free theme for moodle 3.3
 
 Theme installation
 ---------------------
@@ -39,7 +39,7 @@ Changing theme in Moodle
 You can also refer below article link
 ---------------------------------------
 To know about installation and changing theme in Moodle
-https://www.vidyamantra.com/portal/knowledgebase.php?action=displayarticle&id=242
+https://vidyamantra.kayako.com
 
 Images Use in eduhub Theme from creativecommons.org
 --------------------------------------------------

@@ -26,20 +26,8 @@ if (right_to_left()) {
                 format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));
                 ?></a>
             <?php echo $OUTPUT->navbar_button(); ?>
-                        
-            <div class="nav-collapse collapse">
-                
-                
-                <?php echo $OUTPUT->custom_menu(); ?>
-            </div>
-            
-            <div class="clearfix"></div>
-        </div>
-        
-    </nav>
-    <div class="top-header">
-        <div class="container-fluid">
-            <ul class="nav pull-right">
+              
+               <ul class="nav pull-right">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
                 
                     <li class="search">
@@ -58,8 +46,16 @@ if (right_to_left()) {
                 </ul>
             <?php echo $OUTPUT->user_menu(); ?>
             <?php echo $OUTPUT->navbar_plugin_output(); ?>
+            
+            <div class="nav-collapse collapse">
+                <?php echo $OUTPUT->custom_menu(); ?>
+            </div>
+            
+            <div class="clearfix"></div>
         </div>
-    </div>
+        
+    </nav>
+    
 </header>
 
 <div id="page">

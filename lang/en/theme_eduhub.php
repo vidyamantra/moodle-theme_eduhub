@@ -30,7 +30,7 @@ $string['choosereadme'] = '
 </div>
 <div class="well">
  <h3>Theme Documentation:</h3>
- <p><a href="https://www.vidyamantra.com/portal/knowledgebase.php?action=displayarticle&id=243">https://www.vidyamantra.com/portal/knowledgebase.php?action=displayarticle&id=243</a>
+ <p><a href="https://vidyamantra.kayako.com/">https://vidyamantra.kayako.com</a>
  </p>
 <h3>Report a bug:</h3>
 <p>
@@ -38,7 +38,7 @@ $string['choosereadme'] = '
 </p>
 <h2>About</h2>
 <p>This theme is specially made for Course (Education) Training. It is based on Bootstrap framework.</p>
-<h2>Credits</h2><p>This theme was designed for moodle by Vidya Mantra EduSystems Pvt. Ltd.
+<h2>Credits</h2><p>This theme was designed for Moodle by Vidya Mantra EduSystems Pvt. Ltd.
 </p>
 <h2>License</h2>
 <p>
@@ -97,7 +97,7 @@ $string['bannerfontcolor'] = 'Banner Font Color';
 $string['bannerfontcolordesc'] = 'This allow you to set the Banner Font Color';
 
 $string['marketing1icon'] = 'Marketing1 Icon';
-$string['marketing1icondesc'] = 'Upload Marketing1 Icon';
+$string['marketing1icondesc'] = 'Upload Marketing1 Icon (Icon size should be 88px * 86px for perfect view)';
 $string['marketing1heading'] = 'Marketing1 Heading';
 $string['marketing1headingdesc'] = 'Enter Marketing1 Heading Text';
 $string['marketing1subheading'] = 'Marketing1 Subheading';
@@ -108,37 +108,37 @@ $string['marketing1url'] = 'Marketing1 URL';
 $string['marketing1urldesc'] = 'Enter Marketing1 URL';
 
 $string['marketing2icon'] = 'Marketing2 Icon';
-$string['marketing2icondesc'] = 'Upload Marketing2 Icon';
+$string['marketing2icondesc'] = 'Upload Marketing2 Icon (Icon size should be 88px * 86px for perfect view)';
 $string['marketing2heading'] = 'Marketing2 Heading';
 $string['marketing2headingdesc'] = 'Enter Marketing2 Heading Text';
 $string['marketing2subheading'] = 'Marketing2 Subheading';
 $string['marketing2subheadingdesc'] = 'Enter Marketing2 Subheading Text';
 $string['marketing2content'] = 'Marketing2 Content';
 $string['marketing2contentdesc'] = 'Enter Marketing2 Content Text';
-$string['marketing2url'] = 'Marketing1 URL';
-$string['marketing2urldesc'] = 'Enter Marketing1 URL';
+$string['marketing2url'] = 'Marketing2 URL';
+$string['marketing2urldesc'] = 'Enter Marketing2 URL';
 
 $string['marketing3icon'] = 'Marketing3 Icon';
-$string['marketing3icondesc'] = 'Upload Marketing3 Icon';
+$string['marketing3icondesc'] = 'Upload Marketing3 Icon (Icon size should be 88px * 86px for perfect view)';
 $string['marketing3heading'] = 'Marketing3 Heading';
 $string['marketing3headingdesc'] = 'Enter Marketing3 Heading Text';
 $string['marketing3subheading'] = 'Marketing3 Subheading';
 $string['marketing3subheadingdesc'] = 'Enter Marketing3 Subheading Text';
 $string['marketing3content'] = 'Marketing3 Content';
 $string['marketing3contentdesc'] = 'Enter Marketing3 Content Text';
-$string['marketing3url'] = 'Marketing1 URL';
-$string['marketing3urldesc'] = 'Enter Marketing1 URL';
+$string['marketing3url'] = 'Marketing3 URL';
+$string['marketing3urldesc'] = 'Enter Marketing3 URL';
 
 $string['marketing4icon'] = 'Marketing4 Icon';
-$string['marketing4icondesc'] = 'Upload Marketing4 Icon';
+$string['marketing4icondesc'] = 'Upload Marketing4 Icon (Icon size should be 88px * 86px for perfect view)';
 $string['marketing4heading'] = 'Marketing4 Heading';
 $string['marketing4headingdesc'] = 'Enter Marketing4 Heading Text';
 $string['marketing4subheading'] = 'Marketing4 Subheading';
 $string['marketing4subheadingdesc'] = 'Enter Marketing4 Subheading Text';
 $string['marketing4content'] = 'Marketing4 Content';
 $string['marketing4contentdesc'] = 'Enter Marketing4 Content Text';
-$string['marketing4url'] = 'Marketing1 URL';
-$string['marketing4urldesc'] = 'Enter Marketing1 URL';
+$string['marketing4url'] = 'Marketing4 URL';
+$string['marketing4urldesc'] = 'Enter Marketing4 URL';
 
 $string['mainheading'] = 'Main Heading';
 $string['mainheadingdesc'] = 'Enter Main Heading';
@@ -146,7 +146,7 @@ $string['maincontent'] = 'Main Content';
 $string['maincontentdesc'] = 'Enter Main Content';
 
 $string['mainbox1icon'] = 'Mainbox1 Icon';
-$string['mainbox1icondesc'] = 'Upload Mainbox1 Icon';
+$string['mainbox1icondesc'] = 'Upload Mainbox1 Icon (Icon size should be 32px * 32px for perfect view)';
 $string['mainbox1heading'] = 'Mainbox1 Heading';
 $string['mainbox1headingdesc'] = 'Enter Mainbox1 Heading Text';
 $string['mainbox1content'] = 'Mainbox1 Content';
@@ -156,7 +156,7 @@ $string['mainbox1urldesc'] = 'Enter Mainbox1 URL';
 
 
 $string['mainbox2icon'] = 'Mainbox2 Icon';
-$string['mainbox2icondesc'] = 'Upload Mainbox2 Icon';
+$string['mainbox2icondesc'] = 'Upload Mainbox2 Icon (Icon size should be 32px * 32px for perfect view)';
 $string['mainbox2heading'] = 'Mainbox2 Heading';
 $string['mainbox2headingdesc'] = 'Enter Mainbox2 Heading Text';
 $string['mainbox2content'] = 'Mainbox2 Content';
@@ -166,7 +166,7 @@ $string['mainbox2urldesc'] = 'Enter Mainbox2 URL';
 
 
 $string['mainbox3icon'] = 'Mainbox3 Icon';
-$string['mainbox3icondesc'] = 'Upload Mainbox3 Icon';
+$string['mainbox3icondesc'] = 'Upload Mainbox3 Icon (Icon size should be 32px * 32px for perfect view)';
 $string['mainbox3heading'] = 'Mainbox3 Heading';
 $string['mainbox3headingdesc'] = 'Enter Mainbox3 Heading Text';
 $string['mainbox3content'] = 'Mainbox3 Content';
@@ -175,7 +175,7 @@ $string['mainbox3url'] = 'Mainbox3 URL';
 $string['mainbox3urldesc'] = 'Enter Mainbox3 URL';
 
 $string['mainbox4icon'] = 'Mainbox4 Icon';
-$string['mainbox4icondesc'] = 'Upload Mainbox4 Icon';
+$string['mainbox4icondesc'] = 'Upload Mainbox4 Icon (Icon size should be 32px * 32px for perfect view)';
 $string['mainbox4heading'] = 'Mainbox4 Heading';
 $string['mainbox4headingdesc'] = 'Enter Mainbox4 Heading Text';
 $string['mainbox4content'] = 'Mainbox4 Content';

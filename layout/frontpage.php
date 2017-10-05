@@ -4,6 +4,8 @@ $regionmainbox = 'span9';
 $regionmain = 'span12 pull-right';
 $sidepre = 'span4 desktop-first-column';
 $sidepost = 'span3 pull-right';
+
+$PAGE->requires->js('/theme/eduhub/javascript/jquery-1.11.2.min.js');
 // Reset layout mark-up for RTL languages.
 if (right_to_left()) {
     $regionmainbox = 'span9 pull-right';
@@ -23,23 +25,14 @@ if (right_to_left()) {
         
         <div class="container-fluid">
             <div class="pull-left">
-            <a class="logo" href="<?php echo $CFG->wwwroot;?>"><img src="<?php echo $logourl?>" alt="logo"/>             </a>
+               <a class="logo" href="<?php echo $CFG->wwwroot;?>"><img src="<?php echo $logourl?>" alt="logo"/>             </a>
             </div>
             <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo
                 format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));
                 ?></a>
             <?php echo $OUTPUT->navbar_button(); ?>
-                    
-            <div class="nav-collapse collapse">
-                <?php echo $OUTPUT->custom_menu(); ?>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        
-    </nav>
-    <div class="top-header">
-        <div class="container-fluid">
-            <ul class="nav pull-right">
+
+              <ul class="nav pull-right">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
                 
                     <li class="search">
@@ -55,11 +48,16 @@ if (right_to_left()) {
 					  </div>
 				     </div>
                     </li>
-                </ul>
+            </ul>
             <?php echo $OUTPUT->user_menu(); ?>
             <?php echo $OUTPUT->navbar_plugin_output(); ?>
+            <div class="nav-collapse collapse">
+                <?php echo $OUTPUT->custom_menu(); ?>
+            </div>
+            <div class="clearfix"></div>
         </div>
-    </div>
+        
+    </nav>
 </header>
 
 <div id="page">
@@ -114,7 +112,7 @@ if (right_to_left()) {
    }
    ?>
    <?php if ($marketing1url) { ?>
-   <a href="<?php echo $marketing1url?>"><button>More</button></a>
+   <a href="<?php echo $marketing1url?>"><button>vis</button></a>
    <?php 
    } else {
    ?>

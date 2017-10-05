@@ -30,11 +30,11 @@
 
 defined('MOODLE_INTERNAL') || die;
 $plugin->maturity = MATURITY_STABLE;
-$plugin->version   = 2016121900;  // The current module version (Date: YYYYMMDDXX).
-$plugin->release = '1.5 (Build: 2016121900)';
-$plugin->requires  = 2016112900;
+$plugin->version   = 2017051500;  // Theme for Moodle3.3
+$plugin->release = '1.5 (Build: 2017051500)';
+$plugin->requires  = 2017050500;
 $plugin->component = 'theme_eduhub';
 $plugin->dependencies = array(
-    'theme_bootstrapbase'  => 2016112900,
-    'theme_clean'  => 2016112900,
+    'theme_bootstrapbase'  => 2017050500,
+    'theme_clean'  => 2017050500,
 );

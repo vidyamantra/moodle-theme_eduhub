@@ -950,6 +950,7 @@ display: block;
   background-image: url([[pix:theme|menu-bg]]);
   border: 1px dashed #ccc;
 }
+.block_myoverview h4 {margin-top: 0.91em;}
 
 /* Calendar Page Css
 -----------------------*/
@@ -997,6 +998,17 @@ table.calendarmonth th{
 .path-calendar .maincalendar .calendar-controls .current{
   color: #3e65a0;
 }
+.block_course_list .content .unlist {
+    list-style: none;
+margin: 0;
+padding: 0;
+float: left;
+}
+.block_course_list .content li {
+    float: left;
+    clear: both;
+}
+.block_course_list .content .footer {float: left;}
 
 /* Login box
 ------------------------*/
@@ -1032,13 +1044,6 @@ body#page-login-index section{
     color: #333;
 }
 
-
-
-
-
-
-
-
 /* For mobile
 -----------------------*/
 @media only screen and (min-width:969px) and (max-width:1117px) {
@@ -1046,11 +1051,10 @@ body#page-login-index section{
       width: 98%;
     }
 }
-@media only screen and (min-width:768px) and (max-width:959px) {
+@media only screen and (min-width:768px) and (max-width:980px) {
     body.pagelayout-frontpage #page-header{
-      min-height: auto;
-      padding-top: 30px;
-        padding-bottom: 30px;
+      min-height: 180px;
+      padding-top: 60px;
     }
     .navbar-fixed-top{
       margin-bottom: 0;
@@ -1114,9 +1118,9 @@ div#region-main-box,section#region-main{
 
 @media only screen and (min-width:0px) and (max-width:767px) {
   body.pagelayout-frontpage #page-header{
-      min-height: auto;
-      padding-top: 5px;
-      padding-bottom: 30px;
+      min-height: 180px;
+      padding-top: 40px;
+      padding-top: 40px;
     }
     .navbar-fixed-top{
       margin-bottom: 0;

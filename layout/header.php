@@ -35,7 +35,7 @@ $html = theme_eduhub_get_html_for_settings($OUTPUT, $PAGE);
 if (!empty($PAGE->theme->settings->logo)) {
     $logourl = $PAGE->theme->setting_file_url('logo', 'logo');
 } else {
-    $logourl = $OUTPUT->pix_url('/logo', 'theme');
+    $logourl = $OUTPUT->image_url('/logo', 'theme');
 }
 if (!empty($PAGE->theme->settings->bannerheading)) {
     $bannerheading = theme_eduhub_get_setting('bannerheading',true);
@@ -50,7 +50,7 @@ if (!empty($PAGE->theme->settings->bannercontent)) {
 if (!empty($PAGE->theme->settings->marketing1icon)) {
     $marketing1icon = $PAGE->theme->setting_file_url('marketing1icon', 'marketing1icon');
 } else {
-    $marketing1icon = $OUTPUT->pix_url('icon1', 'theme');
+    $marketing1icon = $OUTPUT->image_url('icon1', 'theme');
 }
 
 if (!empty($PAGE->theme->settings->marketing1heading)) {
@@ -76,7 +76,7 @@ if (!empty($PAGE->theme->settings->marketing1url)) {
 if (!empty($PAGE->theme->settings->marketing2icon)) {
     $marketing2icon = $PAGE->theme->setting_file_url('marketing2icon', 'marketing2icon');
 } else {
-    $marketing2icon = $OUTPUT->pix_url('icon2', 'theme');
+    $marketing2icon = $OUTPUT->image_url('icon2', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing2heading)) {
     $marketing2heading = theme_eduhub_get_setting('marketing2heading',true);
@@ -101,7 +101,7 @@ if (!empty($PAGE->theme->settings->marketing2url)) {
 if (!empty($PAGE->theme->settings->marketing3icon)) {
     $marketing3icon = $PAGE->theme->setting_file_url('marketing3icon', 'marketing3icon');
 } else {
-    $marketing3icon = $OUTPUT->pix_url('icon3', 'theme');
+    $marketing3icon = $OUTPUT->image_url('icon3', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing3heading)) {
     $marketing3heading = theme_eduhub_get_setting('marketing3heading',true);
@@ -126,7 +126,7 @@ if (!empty($PAGE->theme->settings->marketing3url)) {
 if (!empty($PAGE->theme->settings->marketing4icon)) {
     $marketing4icon = $PAGE->theme->setting_file_url('marketing4icon', 'marketing4icon');
 } else {
-    $marketing4icon = $OUTPUT->pix_url('icon4', 'theme');
+    $marketing4icon = $OUTPUT->image_url('icon4', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing4heading)) {
     $marketing4heading = theme_eduhub_get_setting('marketing4heading',true);
@@ -152,7 +152,7 @@ if (!empty($PAGE->theme->settings->marketing4url)) {
 if (!empty($PAGE->theme->settings->mainbox1icon)) {
     $mainbox1icon = $PAGE->theme->setting_file_url('mainbox1icon', 'mainbox1icon');
 } else {
-    $mainbox1icon = $OUTPUT->pix_url('icon5', 'theme');
+    $mainbox1icon = $OUTPUT->image_url('icon5', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox1heading)) {
     $mainbox1heading = theme_eduhub_get_setting('mainbox1heading',true);
@@ -173,7 +173,7 @@ if (!empty($PAGE->theme->settings->mainbox1url)) {
 if (!empty($PAGE->theme->settings->mainbox2icon)) {
     $mainbox2icon = $PAGE->theme->setting_file_url('mainbox2icon', 'mainbox2icon');
 } else {
-    $mainbox2icon = $OUTPUT->pix_url('icon6', 'theme');
+    $mainbox2icon = $OUTPUT->image_url('icon6', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox2heading)) {
     $mainbox2heading = theme_eduhub_get_setting('mainbox2heading',true);
@@ -193,7 +193,7 @@ if (!empty($PAGE->theme->settings->mainbox2url)) {
 if (!empty($PAGE->theme->settings->mainbox3icon)) {
     $mainbox3icon = $PAGE->theme->setting_file_url('mainbox3icon', 'mainbox3icon');
 } else {
-    $mainbox3icon = $OUTPUT->pix_url('icon7', 'theme');
+    $mainbox3icon = $OUTPUT->image_url('icon7', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox3heading)) {
     $mainbox3heading = theme_eduhub_get_setting('mainbox3heading',true);
@@ -213,7 +213,7 @@ if (!empty($PAGE->theme->settings->mainbox3url)) {
 if (!empty($PAGE->theme->settings->mainbox4icon)) {
     $mainbox4icon = $PAGE->theme->setting_file_url('mainbox4icon', 'mainbox4icon');
 } else {
-    $mainbox4icon = $OUTPUT->pix_url('icon8', 'theme');
+    $mainbox4icon = $OUTPUT->image_url('icon8', 'theme');
 }
 if (!empty($PAGE->theme->settings->mainbox4heading)) {
     $mainbox4heading = theme_eduhub_get_setting('mainbox4heading',true);
